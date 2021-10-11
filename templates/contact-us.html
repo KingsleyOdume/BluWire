@@ -1,0 +1,213 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>How to Contact Us| BluWire | A Path to Solutions</title>
+{% endblock %}
+
+{% block content %}
+
+<!-- page-title -->
+ <div style="color:green; text-align: center">
+    {% for message in messages %}
+        {{ message }}
+    {% endfor %}
+</div>
+
+        <!--site-main start-->
+        <div class="site-main">
+
+            <!-- services-slide-section -->
+            <section class="ttm-row zero-padding-section clearfix">
+                <div class="container">
+                    <div class="row no-gutters"><!-- row -->
+                        <div class="col-lg-5">
+                            <div class="spacing-9">
+                                <!-- section title -->
+                                <div class="section-title with-desc clearfix">
+                                    <div class="title-header">
+                                        <h5>Come Visit Us At</h5>
+                                        <h2 class="title">Our Address</h2>
+                                    </div>
+                                </div><!-- section title end -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <!-- featured-icon-box -->
+                                        <div class="featured-icon-box style2 left-icon icon-align-top">
+                                            <div class="featured-icon"><!-- featured-icon -->
+                                                <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-round">
+                                                    <i class="fa fa-map-marker"></i>
+                                                </div>
+                                            </div>
+                                            <div class="featured-content">
+                                                <div class="featured-title"><!-- featured title -->
+                                                    <h5>Office Address</h5>
+                                                </div>
+                                                <div class="featured-desc"><!-- featured desc -->
+                                                    <p>Plot 24, IT Igbani Street, Jabi, Abuja</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- separator -->
+                                <div class="separator">
+                                    <div class="sep-line mt-25 mb-25"></div>
+                                </div>
+                                <!-- separator -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <!-- featured-icon-box -->
+                                        <div class="featured-icon-box style2 left-icon icon-align-top">
+                                            <div class="featured-icon"><!-- featured-icon -->
+                                                <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-round">
+                                                    <i class="fa fa-phone"></i>
+                                                </div>
+                                            </div>
+                                            <div class="featured-content">
+                                                <div class="featured-title"><!-- featured title -->
+                                                    <h5>Our Phone Number</h5>
+                                                </div>
+                                                <div class="featured-desc"><!-- featured desc -->
+                                                    <p>+234 802 8720 549</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- separator -->
+                                <div class="separator">
+                                    <div class="sep-line mt-25 mb-25"></div>
+                                </div>
+                                <!-- separator -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <!-- featured-icon-box -->
+                                        <div class="featured-icon-box style2 left-icon icon-align-top">
+                                            <div class="featured-icon"><!-- featured-icon -->
+                                                <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-round">
+                                                    <i class="fas fa-envelope"></i>
+                                                </div>
+                                            </div>
+                                            <div class="featured-content">
+                                                <div class="featured-title"><!-- featured title -->
+                                                    <h5>Our Email</h5>
+                                                </div>
+                                                <div class="featured-desc"><!-- featured desc -->
+                                                    <p><a href="mailto:info@bluwire-il.com">info@bluwire-il.com</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="spacing-10 ttm-bgcolor-grey ttm-bg ttm-col-bgcolor-yes ttm-right-span">
+                                <div class="ttm-col-wrapper-bg-layer ttm-bg-layer">
+                                    <div class="ttm-bg-layer-inner"></div>
+                                </div>
+                                <!-- section title -->
+
+                                <div class="section-title with-desc clearfix">
+                                    <div class="title-header">
+                                        <h5>Send Message</h5>
+                                        <h2 class="title">Drop Us A Line</h2>
+                                    </div>
+                                </div><!-- section title end -->
+                                <form id="ttm-quote-form" class="row ttm-quote-form clearfix was-validated" method="post" >
+                                    {% csrf_token %}
+                                    <div class="col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                           <input name="name" type="text" class="form-control bg-white" style="border-radius:25px;"  placeholder="Full Name*" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input name="phone" type="number" style="border-radius:25px;" placeholder="Phone Number*" required="required" class="form-control bg-white">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                          <input name="email" type="email" style="border-radius:25px;" placeholder="Email Address*" required="required" class="form-control bg-white ">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                           <input name="subject" type="text" style="border-radius:25px;" placeholder="Subject" required="required" class="form-control bg-white">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12">
+                                        <div class="form-group">
+                                         <textarea name="message" rows="5" style="border-radius:25px;" placeholder="Write A Massage..." required="required" class="form-control bg-white"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12">
+                                        <div class="form-group">
+                                         <input type="checkbox" name="sem" value="Were you referred to BluWire?"><label for="vehicle3"> &nbsp;Were you referred to BluWire?</label>
+                                         <h5>Join our email list?</h5>
+                                         <input type="radio" name="yes" value="Yes, Please!" checked>
+                                          <label>Yes, Please!</label><br>
+                                          <input type="radio" name="no" value="Not yet, thanks">
+                                          <label>Not yet, thanks</label><br>
+                                        <p>Join our mailing list to get our blog updates. You can unsubscribe at any time. We respect your privacy and will never share your information.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="text-left">
+                                            <button type="submit" id="submit" class="ttm-btn ttm-btn-size-md ttm-btn-shape-round ttm-btn-bgcolor-skincolor" value="">
+                                                Submit Quote
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row end -->
+                    <!-- row -->
+                    <div class="row">
+
+                    </div><!-- row end-->
+                </div>
+            </section>
+            <!-- services-slide-section end -->
+
+          <!-- map-section -->
+            <div class="ttm-row map-section clearfix">
+                <div class="container-fluid">
+                    <div class="row">
+                            <div class="col-md-12">
+                            <!--map-start-->
+                            <div class="map-wrapper">
+                            <div class="gmap_canvas"><iframe width="1370" height="450" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.0153358315633!2d7.422846750237358!3d9.062364990929126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e74da513804d1%3A0xa94c537585b828f5!2s24%20I.T.%20Igbani%2C%20Utako%2C%20Abuja!5e0!3m2!1sen!2sng!4v1614633248833!5m2!1sen!2sng" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                            </div>
+                            <!--map-end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- map-section end -->
+
+        </div><!--site-main end-->
+
+{% block script %}
+<script src="../../../maps.google.com/maps/api/jsee3a?sensor=false"></script>
+        <script>
+
+            function initialize() {
+                var latlng = new google.maps.LatLng(-34.397, 150.644);
+                var myOptions = {
+                    zoom: 8,
+                    center: latlng,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                var map = new google.maps.Map(document.getElementById("map_canvas"),
+                        myOptions);
+            }
+            google.maps.event.addDomListener(window, "load", initialize);
+
+        </script>
+{% endblock %}
+
+{% endblock content %}

@@ -1,0 +1,461 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>Boost Your Business | How BluWire can Boost Your Business</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'bg/bootstrap/css/bootstrap.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'bg/font-awesome/css/font-awesome.min.css' %}" />
+
+<script type="text/javascript" src="{% static 'bg/js/jquery-1.10.2.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'bg/bootstrap/js/bootstrap.min.js' %}"></script>
+{% endblock %}
+{% block content %}
+
+<!-- DIRTY Responsive pricing table HTML -->
+
+<div class="container">
+
+<div class="page-header"  style="text-align:center;">
+    <h2>WEBSITE MAINTENANCE PRICING</h2>
+    <p style="padding-left:50px; padding-right:50px; font-size:16">If you’re searching for an accurate estimate for monthly website maintenance costs, get started by looking at your current expenses. You can find what you pay for your domain name and website hosting, for example, as well as if you have any additional CMS fees.</p>
+    <p style="font-size:16">When you build your website maintenance budget, your team should research which services mandate upfront payment for the year. This approach allows your department to secure these funds immediately versus over time.</p>
+    <p style="font-size:16">Get your business and your website the best service possible by considering more than pricing.</p>
+</div>
+
+<div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-offset-4 col-sm-8">
+                <div class="row">
+                    <div class="col-xs-3 theader free">
+                        <div class="ptitle">Security Patch & CMS Plan</div>
+    <!--                    <div class="pprice">$0 / month</div>-->
+                        <a href="{% url 'maint' %}" class="btn btn-lg btn-danger">Get Started</a>
+                    </div>
+                    <div class="col-xs-3 theader standard">
+                        <div class="ptitle">Full Web Maintenance Plan</div>
+    <!--                    <div class="pprice">$10 / month</div>-->
+                        <a href="{% url 'maint' %}" class="btn btn-lg btn-danger">Get Started</a>
+                    </div>
+                    <div class="col-xs-3 theader premium">
+                        <div class="ptitle">After Hours</div><br><br>
+    <!--                    <div class="pprice">$20 / month</div>-->
+                        <a href="{% url 'maint' %}" class="btn btn-lg btn-danger">Get Started</a>
+                    </div>
+                  <div class="col-xs-3 theader premium1">
+                        <div class="ptitle">Complete Update</div><br>
+    <!--                    <div class="pprice">$20 / month</div>-->
+                        <a href="{% url 'maint' %}" class="btn btn-lg btn-danger">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row feature">
+            <div class="col-xs-12 col-sm-4 cfeature infos">
+                Website Updates M-F 8a-5p EST
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <div class="row">
+                    <div class="col-xs-3 col-sm-3 ccfreature free">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature standard">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature premium">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                  <div class="col-xs-3 col-sm-3 ccfreature premium1">
+                    <br>
+                       <i class="fa fa-check iconok"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row feature">
+            <div class="col-xs-12 col-sm-4 cfeature infos">
+                Design or Development Hours
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <div class="row">
+                    <div class="col-xs-3 col-sm-3 ccfreature free">
+                      <br>
+                        $150/hour
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature standard">
+                      <br>
+                        Up to 3 hours of design or development time included per month
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature premium">
+                      <br>
+                       Up to 5 hours of design or development time included per month
+                    </div>
+                  <div class="col-xs-3 col-sm-3 ccfreature premium1">
+                    <br>
+                       Up to 5 hours of design or development time included per month
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row feature">
+            <div class="col-xs-12 col-sm-4 cfeature infos">
+                Quarterly CMS Security patches
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <div class="row">
+                    <div class="col-xs-3 col-sm-3 ccfreature free">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature standard">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature premium">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                  <div class="col-xs-3 col-sm-3 ccfreature premium1">
+                    <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row feature">
+            <div class="col-xs-12 col-sm-4 cfeature infos">
+                Annual CMS Version Upgrades
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <div class="row">
+                    <div class="col-xs-3 col-sm-3 ccfreature free">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature standard">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature premium">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                  <div class="col-xs-3 col-sm-3 ccfreature premium1">
+                    <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="row feature">
+            <div class="col-xs-12 col-sm-4 cfeature infos">
+                Daily Security Scan
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <div class="row">
+                    <div class="col-xs-3 col-sm-3 ccfreature free">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature standard">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature premium">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                  <div class="col-xs-3 col-sm-3 ccfreature premium1">
+                    <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="row feature">
+            <div class="col-xs-12 col-sm-4 cfeature infos">
+                Urgent CMS support/restore if website is hacked
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <div class="row">
+                    <div class="col-xs-3 col-sm-3 ccfreature free">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature standard">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature premium">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                  <div class="col-xs-3 col-sm-3 ccfreature premium1">
+                    <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="row feature">
+            <div class="col-xs-12 col-sm-4 cfeature infos">
+                Monthly full-site backup and storage at 3rd party location (for easy restore)
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <div class="row">
+                    <div class="col-xs-3 col-sm-3 ccfreature free">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature standard">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature premium">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                  <div class="col-xs-3 col-sm-3 ccfreature premium1">
+                    <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="row feature">
+            <div class="col-xs-12 col-sm-4 cfeature infos">
+                Online customer support system
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <div class="row">
+                    <div class="col-xs-3 col-sm-3 ccfreature free">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature standard">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature premium">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                  <div class="col-xs-3 col-sm-3 ccfreature premium1">
+                    <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="row feature">
+            <div class="col-xs-12 col-sm-4 cfeature infos">
+                WordPress CMS quarterly upgrades/security patches
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <div class="row">
+                    <div class="col-xs-3 col-sm-3 ccfreature free">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature standard">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature premium">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                  <div class="col-xs-3 col-sm-3 ccfreature premium1">
+                    <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="row feature">
+            <div class="col-xs-12 col-sm-4 cfeature infos">
+                WooCommerce Support
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <div class="row">
+                    <div class="col-xs-3 col-sm-3 ccfreature free">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature standard">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature premium">
+                      <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                  <div class="col-xs-3 col-sm-3 ccfreature premium1">
+                    <br>
+                        <i class="fa fa-check iconok"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="row feature">
+            <div class="col-xs-12 col-sm-4 cfeature infos">
+                Minimum Service Request
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <div class="row">
+                    <div class="col-xs-3 col-sm-3 ccfreature free">
+                      <br>
+                        1 hour
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature standard">
+                      <br>
+                        1.2 hour
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature premium">
+                      <br>
+                        1.3 hour
+                    </div>
+                  <div class="col-xs-3 col-sm-3 ccfreature premium1">
+                    <br>
+                        1.5 hour
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="row feature">
+            <div class="col-xs-12 col-sm-4 cfeature infos">
+                Billing
+            </div>
+            <div class="col-xs-12 col-sm-8">
+                <div class="row">
+                    <div class="col-xs-3 col-sm-3 ccfreature free">
+                      <br>
+                        Billed in 30-min. increments
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature standard">
+                      <br>
+                        Billed in 30-min. increments
+                    </div>
+                    <div class="col-xs-3 col-sm-3 ccfreature premium">
+                      <br>
+                        Billed in 30-min. increments
+                    </div>
+                  <div class="col-xs-3 col-sm-3 ccfreature premium1">
+                    <br>
+                        Billed in 30-min. increments
+                    </div>
+                </div>
+            </div>
+        </div>
+<br>
+    <br>
+          <div style="text-align:center;">
+                                 <div style="text-align:center;">
+                                <h4>Get custom website maintenance pricing for your website</h4>
+                                  <p style="font-size:16">If you’re looking for website maintenance services from a trusted provider, BluWire is a leading choice. With more than 5 years of experience, plus an award-winning team of designers and web developers, we can ensure your website performs for your business.</p>
+                                    <h5>If you have questions about our website maintenance services, call us at <a href="tel:+2348028720549" style="color:#2D4A8A;">+2348028720549</a></h5>
+                                <br>
+                                     <p>If you need immediate assistance, call us at +2348028720549 to chat with a strategist now!</p>
+                                <div class="ttm-btn-box pr-20 pb-20">
+                                    <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-round ttm-icon-btn-right ttm-btn-bgcolor-skincolor" href="{% url 'contact' %}" title="">Contact us online<i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                                 </div>
+          </div>
+</div>
+</div>
+<br>
+<br>
+
+<style>
+    .btn {
+        margin: 10px 0px;
+    }
+
+    .iconok {
+        font-size: 27px;
+        color: green;
+    }
+
+    .iconno {
+        font-size: 27px;
+        color: rgb(221, 41, 41);
+    }
+
+    .theader {
+        text-align: center;
+        color: #000;
+    }
+
+    .ptitle {
+        font-size: 17px;
+        font-weight: bold;
+        margin: 6px;
+    }
+
+    .pprice {
+        font-size: 17px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .occurance {
+    }
+
+    .cfeature {
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    .feature {
+        margin-bottom: 3px;
+    }
+
+    .infos {
+        background: #CDD8C9;
+    }
+
+    .free {
+        background: #DFF0D8;
+    }
+
+    .theader.free {
+        background: #DFF0D8;
+        border-bottom: 3px solid white;
+    }
+
+    .standard {
+        background: #D9EDF7;
+    }
+
+    .theader.standard {
+        background: #D9EDF7;
+        border-bottom: 3px solid white;
+    }
+
+
+    .premium {
+        background: #8DB9DF;
+    }
+
+    .theader.premium {
+        background: #8DB9DF;
+        border-bottom: 3px solid white;
+    }
+    .premium1 {
+        background: #7CBADF;
+    }
+
+    .theader.premium1 {
+        background: #7CBADF;
+        border-bottom: 3px solid white;
+    }
+
+    .ccfreature {
+        text-align: center;
+        font-size: 1em;
+    }
+</style>
+
+{% endblock content %}

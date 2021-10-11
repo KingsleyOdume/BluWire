@@ -1,0 +1,326 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>FAQ | Frequently Asked Questions About BluWire</title>
+{% endblock %}
+{% block content %}
+
+<!-- page-title -->
+<!--        <div class="ttm-page-title-row">-->
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-12">-->
+<!--                        <div class="title-box text-center">-->
+<!--                            <div class="page-title-heading">-->
+<!--                                <h1 class="title"> FAQ's</h1>-->
+<!--                            </div>&lt;!&ndash; /.page-title-captions &ndash;&gt;-->
+<!--                            <div class="breadcrumb-wrapper">-->
+<!--                                <span>-->
+<!--                                    <a title="Homepage" href="index.html"><i class="ti ti-home"></i>&nbsp;&nbsp;Home</a>-->
+<!--                                </span>-->
+<!--                                <span class="ttm-bread-sep">&nbsp; : : &nbsp;</span>-->
+<!--                                <span> Faq</span>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>&lt;!&ndash; /.col-md-12 &ndash;&gt;-->
+<!--                </div>&lt;!&ndash; /.row &ndash;&gt;-->
+<!--            </div>&lt;!&ndash; /.container &ndash;&gt;-->
+<!--        </div>&lt;!&ndash; page-title end&ndash;&gt;-->
+
+        <!--site-main start-->
+        <div class="site-main">
+
+            <!-- services-slide-section -->
+            <section class="ttm-row faqs-section clearfix">
+                <div class="container">
+                    <div class="row"><!-- row -->
+                        <div class="col-lg-8 offset-lg-2">
+                            <!-- section-title -->
+                            <div class="section-title with-desc text-center clearfix">
+                                <div class="title-header">
+                                    <h5>Faq's</h5>
+                                    <h2 class="title">Do you have any questions?</h2>
+
+                                </div>
+                            </div><!-- section-title end -->
+                            <p class="mb-0">Below is a list of common questions and answers typically asked when looking to learn more about Managed Services Providers, IT support/consultancy, IT corporate training and the services we provide. If you have other questions not answered here we’d love to answer them, and you can contact us <a href="{% url 'contact' %}"><b style="color:#2D4A8A;">here.</b></a></p>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    <!-- row end -->
+                    <!-- row -->
+                    <div class="row">
+<!--                        <div class="col-lg-6">-->
+<!--                            &lt;!&ndash; ttm_single_image-wrapper &ndash;&gt;-->
+<!--                            <div class="ttm_single_image-wrapper">-->
+<!--                                <img class="img-fluid" src="{% static 'images/single-img-eleven.jpg' %}" title="single-img-eleven" alt="single-img-eleven">-->
+<!--                            </div>&lt;!&ndash; ttm_single_image-wrapper end &ndash;&gt;-->
+<!--                            <div class="ttm-play-icon-btn ttm-play-icon-btn-center">-->
+<!--                                <div class="ttm-play-icon-animation">-->
+<!--                                    <a href="../../../www.youtube.com/watcheb8f.html" target="_self" class="ttm_prettyphoto">-->
+<!--                                        <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-sm ttm-icon_element-style-round">-->
+<!--                                            <i class="ti ti-control-play ml-3"></i>-->
+<!--                                        </div>-->
+<!--                                    </a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                        <div class="col-lg-12">
+                            <!-- acadion -->
+                            <div class="accordion res-991-mt-30">
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" >What is BluWire</a>
+                                    </div>
+                                    <div class="toggle-content">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p class="mb-0">BluWire Integrated is an Information Technology company with headquartered in Abuja, deals with every aspect IT solutions. Our Technology offers various tools to boost development and to exchange information, with 5 years of experience serving the IT needs of small and medium-sized businesses nationwide.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsetwo" >What is an MSP (Managed IT Service Provider)?</a></div>
+                                    <div class="toggle-content">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p class="mb-0">A Managed IT Service Provider (MSP) is a company that remotely manages a customer’s IT infrastructure and/or end-user systems.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsethree" >What are BluWire IT’s Response Times?</a></div>
+                                    <div class="toggle-content">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <ul>
+                                                    <li>2 Minute Average Initial Response Time</li>
+                                                    <li>15 Minute Average Response Time</li>
+                                                    <li>1 Hour Average Resolution Time</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsethree" >How is BluWire IT Accountable?</a></div>
+                                    <div class="toggle-content">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p class="mb-0">Here at BluWire Integrated, accountability is built into our business by the responsibility to uphold the great reputation we’ve established over 5 years. All our services are backed by a Service Level Agreement (SLA) that states what services you’ll receive and the time frame in which you’ll receive those service. We also implement Customer Satisfaction (CSAT) tracking on every help desk ticket submitted. When an issue is resolved you’ll be able to rank your customer experience. If the review is anything but perfect, your assigned account manager will reach out to discover what we can do better next time.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsethree" >Can BluWire Create a Custom Offering for My Business?</a></div>
+                                    <div class="toggle-content">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p class="mb-0">Yes, please speak to a support representative so we can better understand your business’s unique needs. </p>
+                                                <p class="mb-0"><a href="tel:+234 0802 872 0549;">Call: +234 0802 872 0549</a></p>
+                                                <p class="mb-0"><a href="mailto:info@bluwire-il.com">Email: info@bluwire-il.com</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsethree" >Will BluWire Recommend and/or Purchase Hardware and Software Products for Me?</a></div>
+                                    <div class="toggle-content">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p class="mb-0">Yes, if you’re interested in purchasing hardware or software and are looking for recommendations please reach out to our IT officer for assistance. When necessary our IT officer will recommend you upgrade outdated or nonfunctional hardware.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsethree" >How Can I Get Started / Speak With a Representative?</a></div>
+                                    <div class="toggle-content">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p class="mb-0">Yes, please speak to a support representative to get you started. </p>
+                                                <p class="mb-0"><a href="tel:+234 0802 872 0549;">Call: +234 0802 872 0549</a></p>
+                                                <p class="mb-0"><a href="mailto:info@bluwire-il.com">Email: info@bluwire-il.com</a></p>
+                                                <p class="mb-o">Submit a contact form on our website.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsethree" >Can BluWire Help Us Develop and IT Security Policy?</a></div>
+                                    <div class="toggle-content">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p class="mb-0">Yes! BluWire is ready to serve as your trusted security adviser. During the onboarding process we ensure all the necessary security services are configured to protect your business. If you would like to review or update your security policy at any time please reach out to our support.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsethree" >How Does BluWire Handle Vendor Management?</a></div>
+                                    <div class="toggle-content">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p class="mb-0">Our goal is to be the only contact you need to manage your IT. BluWire handles all the management, communication and coordination of our client’s vendors.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsethree" >What resources do I have for practice if I do not have a computer at home?</a></div>
+                                    <div class="toggle-content">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p class="mb-0">You can set up an appointment to come in and use our computer lab. We will be happy to get you set up with whatever you need to practice on.  You can schedule the lab Monday - Thursday anytime after class until 5pm.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsethree" >Where can I go to write a great review?</a></div>
+                                    <div class="toggle-content">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p class="mb-0">After each course, we send our students a request to fill out a survey and let us know what we could do to make the class better. Also, feel free to go to some review website and click on the links to write a review with Angies List, Google, Yelp, Yahoo or Bing. Pick one! We appreciate your time in doing that and want to make every effort to address any issues, or obtain referrals from happy customers or get feedback on what we can do better. It’s your voice, use it!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsethree" >What do I need to bring to class?</a></div>
+                                    <div class="toggle-content">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p class="mb-0">A willingness to learn, a positive attitude, business casual dress, yourself-on time, personal computer, a flash drive, and your utmost attention. We serve a bottomless pot of coffee all day long, ice cold Zephyrhills water and great snacks from time to time. We want you to feel welcomed and comfortable. Also, bring business cards, resumés and the like as these classes are great opportunities to network!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsethree" >What skills are taught in the ICT Essentials suite of courses?</a></div>
+                                    <div class="toggle-content">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p class="mb-0">The ICT Essentials suite of courses is designed to help teachers provide students with the computer, digital, and Information Technology (IT) skills necessary for success in their future academic and occupational goals. In addition to fundamental computer skills, this series covers technologies associated with web development, multimedia, word processing, spreadsheets, databases, Internet communications, cyber security, gaming, and basic programming.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsethree" >How much does your computer training cost?</a></div>
+                                    <div class="toggle-content">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p class="mb-0">First, think of computer training as an investment. It’s an investment in yourself and in your career. Cost is different. A can of soda might cost you $ 1.20 at the local convenience store, and be gone in a few gulps. It might taste good, but will leave you with little lasting value. Computer training, however, opens career avenues, and will last you a lifetime. The knowledge stays with you wherever you go. So how much of an investment? It depends on the particular computer training classes you take. We don’t publish a public schedule or price list. We aren’t interested in a price war. Nobody wins in a price war. That’s when you have to start cutting corners – and leaving things out.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+                                <!-- toggle -->
+                                <div class="toggle">
+                                    <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsethree" >How Does BluWire Monitor Customer Satisfaction?</a></div>
+                                    <div class="toggle-content">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p class="mb-0">BluWire uses Customer Satisfaction (CSAT) Tracking software. When an issue is resolved simply rank the experience with our technical support with a smiling, neutral, or upset face. If the selection is anything but a smiling face, a client manager will reach out to see how we can do better in the future.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- toggle end -->
+<!--                                &lt;!&ndash; toggle &ndash;&gt;-->
+<!--                                <div class="toggle">-->
+<!--                                    <div class="toggle-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapsethree" >How Does BluWire Handle Vendor Management?</a></div>-->
+<!--                                    <div class="toggle-content">-->
+<!--                                        <div class="row">-->
+<!--                                            <div class="col-sm-12">-->
+<!--                                                <p class="mb-0"></p>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>&lt;!&ndash; toggle end &ndash;&gt;-->
+                            </div><!-- acadion  end-->
+                        </div>
+                    </div>
+                    <!-- row end-->
+                    <!-- row -->
+                    <div class="row mt-70 res-991-mt-30">
+                        <div class="col-lg-4">
+                            <!--  featured-icon-box -->
+                            <div class="featured-icon-box left-icon style7 icon-align-top">
+                                <div class="featured-icon"><!--  featured-icon -->
+                                    <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-md">
+                                        <i class="flaticon flaticon-system"></i><!--  ttm-icon -->
+                                    </div>
+                                </div>
+                                <div class="featured-content"><!--  featured-content -->
+                                    <div class="featured-title"><!--  featured-title -->
+                                        <h5>Make It Simple</h5>
+                                    </div>
+                                    <div class="featured-desc"><!--  featured-desc -->
+                                        <p>Information technology helps people to keep in contact with family and friends via e-mail, manage their finances with spreadsheets and online banking, track investments.</p>
+                                    </div>
+                                </div>
+                            </div><!--  featured-icon-box END -->
+                        </div>
+                        <div class="col-lg-4">
+                            <!--  featured-icon-box -->
+                            <div class="featured-icon-box left-icon style7 icon-align-top">
+                                <div class="featured-icon"><!--  featured-icon -->
+                                    <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-md">
+                                        <i class="flaticon flaticon-data"></i><!--  ttm-icon -->
+                                    </div>
+                                </div>
+                                <div class="featured-content"><!--  featured-content -->
+                                    <div class="featured-title"><!--  featured-title -->
+                                        <h5>Unique Strategy</h5>
+                                    </div>
+                                    <div class="featured-desc"><!--  featured-desc -->
+                                        <p>It helps businesses and organizations categorize, store, process and transfer the information they create and receive. It also offers tools for helping companies.</p>
+                                    </div>
+                                </div>
+                            </div><!--  featured-icon-box END -->
+                        </div>
+                        <div class="col-lg-4">
+                            <!--  featured-icon-box -->
+                            <div class="featured-icon-box left-icon style7 icon-align-top">
+                                <div class="featured-icon"><!--  featured-icon -->
+                                    <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-md">
+                                        <i class="flaticon-complete"></i><!--  ttm-icon -->
+                                    </div>
+                                </div>
+                                <div class="featured-content"><!--  featured-content -->
+                                    <div class="featured-title"><!--  featured-title -->
+                                        <h5>Unique Planning</h5>
+                                    </div>
+                                    <div class="featured-desc"><!--  featured-desc -->
+                                        <p>IT strategic planning must be firmly rooted in the business strategic plan — period. If the business strategy is to invest in digital transformation, IT must extrapolate it's process.</p>
+                                    </div>
+                                </div>
+                            </div><!--  featured-icon-box END -->
+                        </div>
+                    </div><!-- row end-->
+                </div>
+            </section>
+            <!-- services-slide-section end -->
+
+        </div><!--site-main end-->
+
+{% endblock content %}

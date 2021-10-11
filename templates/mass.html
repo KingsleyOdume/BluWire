@@ -1,0 +1,207 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>How to Contact Us| BluWire | A Path to Solutions</title>
+{% endblock %}
+
+{% block content %}
+
+<!-- page-title -->
+ <div style="color:green; text-align: center">
+    {% for message in messages %}
+        {{ message }}
+    {% endfor %}
+</div>
+
+        <!--site-main start-->
+        <div class="site-main">
+
+            <!-- services-slide-section -->
+            <section class="ttm-row zero-padding-section clearfix">
+                <div class="container">
+                    <div class="row no-gutters"><!-- row -->
+                        <div class="col-lg-5" style="background-color:#E1E1E1; padding-left:45px; color:#000;">
+                            <div class="spacing-9">
+                                <!-- section title -->
+                                <div class="section-title with-desc clearfix">
+                                    <div class="title-header">
+                                        <h3 class="title">Would you prefer to talk to someone in in person?</h3>
+                                        <h3>Speak with a strategist:</h3>
+                                        <p style="color:#2D4A8A; padding: 0 40px 0 30px;height: 85px;line-height: 85px;font-size: 30px;font-weight:600; background: #00b170;text-align: center;border-radius: 5px;text-transform: uppercase;display: inline-block;"><a href="tel:+2348028720549">+234 802 8720 549</a></p>
+                                        <h3 class="title">or Visit Us!</h3>
+                                    </div>
+                                </div><!-- section title end -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <!-- featured-icon-box -->
+                                        <div class="featured-icon-box style2 left-icon icon-align-top">
+                                            <div class="featured-icon"><!-- featured-icon -->
+                                                <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-round">
+                                                    <i class="fa fa-map-marker"></i>
+                                                </div>
+                                            </div>
+                                            <div class="featured-content">
+                                                <div class="featured-title"><!-- featured title -->
+                                                    <h5>Office Address</h5>
+                                                </div>
+                                                <div class="featured-desc"><!-- featured desc -->
+                                                    <p>Plot 24, IT Igbani Street, Jabi, Abuja</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- separator -->
+                                <div class="separator">
+                                    <div class="sep-line mt-25 mb-25"></div>
+                                </div>
+                                <!-- separator -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <!-- featured-icon-box -->
+                                        <div class="featured-icon-box style2 left-icon icon-align-top">
+                                            <div class="featured-icon"><!-- featured-icon -->
+                                                <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-round">
+                                                    <i class="fa fa-phone"></i>
+                                                </div>
+                                            </div>
+                                            <div class="featured-content">
+                                                <div class="featured-title"><!-- featured title -->
+                                                    <h5>Our Phone Number</h5>
+                                                </div>
+                                                <div class="featured-desc"><!-- featured desc -->
+                                                    <p>+234 802 8720 549</p>
+                                                    <p>+234 803 4504 609</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- separator -->
+                                <div class="separator">
+                                    <div class="sep-line mt-25 mb-25"></div>
+                                </div>
+                                <!-- separator -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <!-- featured-icon-box -->
+                                        <div class="featured-icon-box style2 left-icon icon-align-top">
+                                            <div class="featured-icon"><!-- featured-icon -->
+                                                <div class="ttm-icon ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-round">
+                                                    <i class="fas fa-envelope"></i>
+                                                </div>
+                                            </div>
+                                            <div class="featured-content">
+                                                <div class="featured-title"><!-- featured title -->
+                                                    <h5>Our Email</h5>
+                                                </div>
+                                                <div class="featured-desc"><!-- featured desc -->
+                                                    <p><a href="mailto:info@bluwire-il.com">info@bluwire-il.com</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="spacing-10 ttm-bgcolor-grey ttm-bg ttm-col-bgcolor-yes ttm-right-span">
+                                <div class="ttm-col-wrapper-bg-layer ttm-bg-layer">
+                                    <div class="ttm-bg-layer-inner"></div>
+                                </div>
+                                <!-- section title -->
+
+                                <div class="section-title with-desc clearfix">
+                                    <div class="title-header">
+                                        <h5>Drop Us A Line</h5>
+                                        <h2 class="title">Let's Do Great Work Together</h2>
+                                    </div>
+                                </div><!-- section title end -->
+                                <form id="ttm-quote-form" class="row ttm-quote-form clearfix was-validated" method="post" >
+                                    {% csrf_token %}
+                                    <div class="col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                           <input name="name" type="text" class="form-control bg-white" style="border-radius:25px;"  placeholder="Full Name*" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6">
+                                        <div class="form-group" name="budget">
+                                            <label for="budget">Estimated Budget:</label>
+                                                  <select name="budget" id="budget">
+                                                    <option value="$100">Unknown</option>
+                                                    <option value="$100">$100</option>
+                                                    <option value="$200">$200</option>
+                                                    <option value="$300">$300</option>
+                                                    <option value="$400">$400</option>
+                                                    <option value="$500">$500</option>
+                                                  </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input name="phone" type="number" style="border-radius:25px;" placeholder="Phone Number*" required="required" class="form-control bg-white">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                          <input name="email" type="email" style="border-radius:25px;" placeholder="Email Address*" required="required" class="form-control bg-white ">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                           <input name="subject" type="text" style="border-radius:25px;" placeholder="Subject" required="required" class="form-control bg-white">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                           <input name="network" type="text" style="border-radius:25px;" placeholder="How many network?" required="required" class="form-control bg-white">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-12">
+                                        <div class="form-group">
+                                         <textarea name="message" rows="5" style="border-radius:25px;" placeholder="Describe Your Project in detail..." required="required" class="form-control bg-white"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="text-left">
+                                            <button type="submit" id="submit" class="ttm-btn ttm-btn-size-md ttm-btn-shape-round ttm-btn-bgcolor-skincolor" value="">
+                                                Submit
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row end -->
+                    <!-- row -->
+                    <div class="row">
+
+                    </div><!-- row end-->
+                </div>
+            </section>
+            <!-- services-slide-section end -->
+
+          <!-- map-section -->
+<!--            <div class="ttm-row map-section clearfix">-->
+<!--                <div class="container-fluid">-->
+<!--                    <div class="row">-->
+<!--                            <div class="col-md-12">-->
+<!--                            &lt;!&ndash;map-start&ndash;&gt;-->
+<!--                            <div class="map-wrapper">-->
+<!--                            <div class="gmap_canvas"><iframe width="1370" height="450" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.0153358315633!2d7.422846750237358!3d9.062364990929126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e74da513804d1%3A0xa94c537585b828f5!2s24%20I.T.%20Igbani%2C%20Utako%2C%20Abuja!5e0!3m2!1sen!2sng!4v1614633248833!5m2!1sen!2sng" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>-->
+<!--                            </div>-->
+<!--                            &lt;!&ndash;map-end&ndash;&gt;-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+            <!-- map-section end -->
+
+        </div><!--site-main end-->
+
+
+
+
+{% endblock content %}

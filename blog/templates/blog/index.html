@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>BluWire Blog | Get updates, career advice, and job market news on the FutureLearn Blog</title>
+{% endblock %}
+{% block content %}
+
+<!-- page-title -->
+<br>
+<br>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- section title -->
+                <div class="section-title text-center with-desc clearfix">
+                    <div class="title-header">
+                        <h5>Our Blog</h5>
+                        <h2 class="title">Check out our <span>Latest News</span></h2>
+                    </div>
+                </div><!-- section title end -->
+            </div>
+        </div>
+        <!--site-main start-->
+        <div class="site-main">
+
+            <!-- blog-section end -->
+            <section class="ttm-row grid-section ttm-bgcolor-grey clearfix">
+                <div class="container">
+
+                    <!-- row -->
+                    <div class="row">
+                        {% for post in posts %}
+                        <div class="col-lg-4 col-md-6">
+                            <!-- featured-imagebox-blog -->
+                            <div class="featured-imagebox featured-imagebox-blog mb-30">
+                                <div class="featured-thumbnail"><!-- featured-thumbnail -->
+                                    <img class="img-fluid" src="{{ post.img.url }}" alt="">
+                                    <div class="ttm-blog-overlay-iconbox">
+                                        <a href="{% url 'post_detail' post.slug %}"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                    <div class="ttm-box-view-overlay"></div>
+                                </div>
+                                <div class="featured-content"><!-- featured-content -->
+                                    <div class="ttm-box-post-date"><!-- ttm-box-post-date -->
+                                        <span class="ttm-entry-date">
+                                            <small class="entry-date" datetime=""><span class="entry-month entry-year">{{ post.date_posted }}</span></small>
+                                        </span>
+                                    </div>
+                                    <div class="featured-title"><!-- featured-title -->
+                                        <h5><a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a></h5>
+                                    </div>
+                                    <div class="post-meta"><!-- post-meta -->
+                                        <span class="ttm-meta-line"><i class="fa fa-comments"></i>{{ post.comments_count }}</span>
+                                        <span class="ttm-meta-line"><i class="fa fa-user"></i>{{ post.author }}</span>
+
+                                    </div>
+                                    <div class="featured-desc"><!-- featured-description -->
+                                        <p>{{ post.intro }}</p>
+                                    </div>
+                                    <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right mt-20" href="{% url 'post_detail' post.slug %}">Read More <i class="ti ti-angle-double-right"></i></a>
+                                </div>
+                            </div><!-- featured-imagebox-blog end -->
+                        </div>
+                        {% endfor %}
+
+                    </div><!-- row end -->
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="ttm-pagination">
+                                {% for num in blogg.paginator.page_range %}
+                                    {% if blogg.number == num %}
+                                <span class="page-numbers current">{{ num }}</span>
+                                    {% endif %}
+                                {% endfor %}
+                                {% if blogg.has_previous %}
+                                <a class="page-numbers" href="?page={{ page_obj.previous_page_number }}"></a>
+                                {% endif %}
+                                {% if blogg.has_next %}
+                                <a class="next page-numbers" href="?page={{ blogg.next_page_number }}"><i class="ti ti-arrow-right"></i></a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- process-section end -->
+
+        </div><!--site-main end-->
+
+{% endblock content %}

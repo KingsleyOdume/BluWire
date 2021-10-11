@@ -1,0 +1,590 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>How Much Should a Website Cost? (The Official 2021 Guide) | BluWire</title>
+<meta name="description" content="Curious how much a website should cost to develop and maintain? Web design costs $1,000 to $150,000, while site maintenance costs $200 to $60,000 yearly." />
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<style>
+    body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.pricing-table-box {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+	width: 100%;
+}
+
+.pricing-table-box td {
+    padding: 0px;
+    border-left: 1px solid transparent;
+}
+
+.pricing-table-box .pricing-table-box-list td {
+    padding: 10px 8px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 14px;
+    background: #F9F9F9;
+}
+
+.pricing-table-box .pricing-table-box-list .glyphicon-ok {
+    color: #68AF27;
+}
+
+.pricing-table-box .pricing-table-box-list .glyphicon-remove {
+    color: #C22439;
+}
+
+.pricing-table-box .pricing-table-box-list td:first-child {
+    font-weight: 400;
+    text-align: left;
+    border-left: 0px;
+    font-size: 14px;
+    color: #060606;
+}
+
+.pricing-table-box .pricing-table-box-list:nth-child(2n) td {
+    background: #F2F2F2;
+}
+
+.pricing-table-box .pricing-table-box-text h2 {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: #8a8a8a;
+}
+
+.pricing-table-box .pricing-table-box-text p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+}
+
+.pricing-table-box .pricing-table-box-item {
+    color: #FFF;
+}
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-head {
+    padding: 10px 5px;
+    text-align: center;
+    background-color: #2ac4ea!important;
+    box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    -moz-box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    -webkit-box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    -o-box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+}
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-head p {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-price {
+    padding: 15px 10px;
+    text-align: center;
+    color: #009AD7;
+    background: #F9F9F9;
+}
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-price p {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 0px;
+}
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-price p span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-price > span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #009AD7
+}
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-purchase {
+    padding: 10px 5px;
+    background: #FFF;
+}
+
+.pricing-table-box-item-purchase .btn {
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    background-color: #2ac4ea;
+    box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    -moz-box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    -webkit-box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    -o-box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    border: none;
+    padding: 11px 0;
+}
+
+.btn-success.active.focus,
+.btn-success.active:focus,
+.btn-success.active:hover,
+.btn-success:active.focus,
+.btn-success:active:focus,
+.btn-success:active:hover,
+.open>.dropdown-toggle.btn-success.focus,
+.open>.dropdown-toggle.btn-success:focus,
+.open>.dropdown-toggle.btn-success:hover {
+    color: inherit!important;
+    background-color: inherit!important;
+    border-color: inherit!important;
+}
+
+.pricing-table-box .pricing-table-box-list:nth-child(1n) td.second-row {
+    background: #F2F2F2;
+}
+
+.pricing-table-box .pricing-table-box-list:nth-child(2n) td.second-row {
+    background: #dedede;
+}
+
+.pricing-table-box .pricing-table-box-list:nth-child(1n) td.fourth-row {
+    background: #F2F2F2;
+}
+
+.pricing-table-box .pricing-table-box-list:nth-child(2n) td.fourth-row {
+    background: #dedede;
+}
+
+
+/* Color Version 2*/
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-head.color2 {
+    background-color: #f6653c!important;
+}
+
+.pricing-table-box-item-purchase .btn.color2 {
+    background-color: #f6653c!important;
+}
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-price.color2 {
+    color: #2D4A8A!important;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!--  <div class="row">-->
+<!--            <div class="col-md-12">-->
+<!--                &lt;!&ndash; section title &ndash;&gt;-->
+<!--                <div class="section-title text-center with-desc clearfix">-->
+<!--                    <div class="title-header">-->
+<!--                        <h1 class="title">How Much Should a Website Cost in 2021?</h1>-->
+<!--                        <center style="padding-left:250px; padding-right:250px;">Whether your business operates offline or online, it’s crucial to build and maintain a website in today’s digital world. How much should a website cost, though? On average, the upfront cost of a site, which includes launching and designing it, is $2,000 to $150,000, while routine website maintenance ranges from $35 to $5000 per month — or $200 to $60,000 per year.</center>-->
+<!--                    </div>-->
+<!--                </div>&lt;!&ndash; section title end &ndash;&gt;-->
+<!--                <div class="container" style="background-color:#F7F9FE;">-->
+<!--                        <h2 class="title">How much does a website cost?</h2>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+        <!--site-main start-->
+        <div class="site-main">
+        <!-- sidebar -->
+        <div class="sidebar ttm-sidebar ttm-bgcolor-white clearfix">
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-lg-9 content-area order-lg-2">
+                        <!-- ttm-service-single-content-are -->
+                        <!-- ttm-service-single-content-are -->
+                        <div class="ttm-service-single-content-area">
+                            <div class="ttm_single_image-wrapper mb-35">
+                                <img class="img-fluid" src="{% static 'images/web-dev.png' %}" alt="Website Development">
+                            </div>
+                            <div class="ttm-service-description">
+                                <h2>How Much Should a Website Cost in 2021?</h2>
+                                <p>Whether your business operates offline or online, it’s crucial to build and maintain a website in today’s digital world. How much should a website cost, though? On average, the upfront cost of a site, which includes launching and designing it, is $2,000 to $150,000, while routine website maintenance ranges from $35 to $5000 per month — or $200 to $60,000 per year.</p>
+                                <p>Get a quick summary of how much it costs to build and make a website (on average) in this table. Keep reading to learn about the different expenses that come with web design and website maintenance, as well as the price differences between agencies, freelancers, and platforms like WordPress and Wix!</p>
+                            </div>
+
+                            <table class="pricing-table-box">
+                                <tbody>
+                                    <tr>
+                                        <td width="50%" class="pricing-table-box-text">
+
+                                        </td>
+                                        <td width="50%">
+                                            <div class="pricing-table-box-item">
+                                                <div class="pricing-table-box-item-price color2">
+                                                    <p>Web Design, Web Maintenance, <br>and Web Marketing Cost</p>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Web Design</td>
+                                        <td class="second-row">$2,000 to $150,000 / design</td>
+
+                                    </tr>
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Website Maintenance</td>
+                                        <td class="second-row">$200 to $60,000 / year</td>
+
+                                    </tr>
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Website Marketing</td>
+                                        <td class="second-row">$500 to $12,000 / month</td>
+
+                                    </tr>
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Website Design Services <br>(Agency, Freelancer, or Website Builder)</td>
+                                        <td class="second-row">$0 to $100,000</td>
+
+                                    </tr>
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Website Maintenance Services <br>(Agency, Freelancer, or Website Builder)</td>
+                                        <td class="second-row">$0 to $5,500 / year</td>
+
+                                    </tr>
+<!--                                    <tr class="pricing-table-box-list">-->
+<!--                                        <td class="first-row">Email Addresses</td>-->
+<!--                                        <td class="second-row">50</td>-->
+
+<!--                                    </tr>-->
+<!--                                    <tr class="pricing-table-box-list">-->
+<!--                                        <td class="first-row">Premium DNS</td>-->
+<!--                                        <td class="second-row"><span class="glyphicon glyphicon-remove"></span></td>-->
+
+<!--                                    </tr>-->
+
+                                </tbody>
+                            </table>
+                                <br>
+                            <br>
+                            <h3>How much does a website for a business cost?</h3>
+                            <p>A business website can cost hundreds of thousands of dollars.</p>
+                            <p>Web design prices for business websites, for example, range from $2,000 to $75,000, while annual website maintenance can cost $400 to $60,000. These prices, however, do depend on the size and features of your site. Depending on your website, you may pay less (or more) than these estimates.</p>
+                            <table class="pricing-table-box">
+                                <tbody>
+                                    <tr>
+                                        <td width="50%" class="pricing-table-box-text">
+
+                                        </td>
+                                        <td width="25%">
+                                            <div class="pricing-table-box-item">
+                                                <div class="pricing-table-box-item-price color2">
+                                                    <p>Web Design Cost</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td width="25%">
+                                            <div class="pricing-table-box-item">
+                                                <div class="pricing-table-box-item-price color2">
+                                                    <p>Annual Site Maintenance Costs</p>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Informational or Small Business Website <br>(8-16 pages)</td>
+                                        <td class="second-row">$1,000 - $9,000</td>
+                                        <td class="third-row">$200 - $1,200</td>
+                                    </tr>
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Corporate Website <br>(25-75 pages)</td>
+                                        <td class="second-row">$2,000 - $35,000</td>
+                                        <td class="third-row">$1,000 - $15,000</td>
+
+                                    </tr>
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Ecommerce Website <br>(100-1000 products)</td>
+                                        <td class="second-row">$3,000 - $55,000</td>
+                                        <td class="third-row">$5,000 - $30,000</td>
+
+                                    </tr>
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Database Driven Website or Website Application <br>(20-2000 pages)</td>
+                                        <td class="second-row">$3,000 - $75,000</td>
+                                        <td class="third-row">$20,000 - $60,000</td>
+
+                                    </tr>
+<!--                                    <tr class="pricing-table-box-list">-->
+<!--                                        <td class="first-row">Website Maintenance Services <br>(Agency, Freelancer, or Website Builder)</td>-->
+<!--                                        <td class="second-row">$0 to $5,500 / year</td>-->
+<!--                                        <td class="third-row">Unlimited</td>-->
+
+<!--                                    </tr>-->
+<!--                                    <tr class="pricing-table-box-list">-->
+<!--                                        <td class="first-row">Email Addresses</td>-->
+<!--                                        <td class="second-row">50</td>-->
+
+<!--                                    </tr>-->
+<!--                                    <tr class="pricing-table-box-list">-->
+<!--                                        <td class="first-row">Premium DNS</td>-->
+<!--                                        <td class="second-row"><span class="glyphicon glyphicon-remove"></span></td>-->
+
+<!--                                    </tr>-->
+
+                                </tbody>
+                            </table>
+                            <br>
+                            <br>
+                            <h3>Web design costs for 2021</h3>
+                            <p>Whether you’re looking to launch a brand-new website or redesign your existing site, your business needs to consider some web design and development costs. These costs are often one-time expenses, meaning it costs more to launch a website than maintain one.</p>
+
+                            <table class="pricing-table-box">
+                                <tbody>
+                                    <tr>
+                                        <td width="50%" class="pricing-table-box-text">
+                                            <h2>How much does it cost to build a website? <br>Between $2,500 to $150,000.</h2>
+                                        </td>
+                                        <td width="50%">
+                                            <div class="pricing-table-box-item">
+                                                <div class="pricing-table-box-item-price color2">
+                                                    <p>Web Design Costs</p>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Domain Name</td>
+                                        <td class="second-row">$10 to $15</td>
+
+                                    </tr>
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">SSL Certificate</td>
+                                        <td class="second-row">$0 - $1,500</td>
+
+                                    </tr>
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Website Hosting</td>
+                                        <td class="second-row">$24 - $10,000</td>
+
+                                    </tr>
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Style or Theme</td>
+                                        <td class="second-row">$1,000 - $15,000</td>
+
+                                    </tr>
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Responsive Design</td>
+                                        <td class="second-row">$1,000 - $25,000</td>
+                                    </tr>
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Interactive Multimedia</td>
+                                        <td class="second-row">$150 - $10,000</td>
+<!--                                        <td class="second-row">50</td>-->
+                                    </tr>
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Content Management System (CMS)</td>
+                                        <td class="second-row">$1,000 - $25,000</td>
+                                    </tr>
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Ecommerce Functionality</td>
+                                        <td class="second-row">$1,000 - $25,000</td>
+                                    </tr>
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Database Integration</td>
+                                        <td class="second-row">$1,000 - $25,000</td>
+                                    </tr>
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Pages (1 to 250 pages)</td>
+                                        <td class="second-row">$500 - $10,000</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <p>Of course, with web design and development, you can choose to work with a freelancer, third-party website builder, or web design agency. Each offers different advantages and disadvantages, as well as varying prices. In most cases, businesses will partner with either a freelance web designer or web design agency.</p>
+                            <p style="text-align:center; font-weight:600;">Why?</p>
+                            <p>A third-party website builder, like Wix or Squarespace, still requires web design experience. Even though these platforms can help your team create an attractive website, they don’t ensure a user-friendly site, which is critical if you want people to purchase your product or contact your company.</p>
+                            <br>
+                            <table class="pricing-table-box">
+                                <tbody>
+                                    <tr>
+                                        <td width="50%" class="pricing-table-box-text">
+                                            <h2>Explore the price differences between these three parties, below:</h2>
+                                        </td>
+                                        <td width="50%">
+                                            <div class="pricing-table-box-item">
+                                                <div class="pricing-table-box-item-price color2">
+                                                    <p>Freelancer, Website Builder, and Web Design Agency Costs</p>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Website Builder</td>
+                                        <td class="second-row">$0 - $300</td>
+
+                                    </tr>
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Freelancer</td>
+                                        <td class="second-row">$500 - $5,000</td>
+
+                                    </tr>
+                                    <tr class="pricing-table-box-list">
+                                        <td class="first-row">Web Design Agency</td>
+                                        <td class="second-row">$2,000 - $100,000</td>
+
+                                    </tr>
+<!--                                    <tr class="pricing-table-box-list">-->
+<!--                                        <td class="first-row">Style or Theme</td>-->
+<!--                                        <td class="second-row">$1,000 - $15,000</td>-->
+
+<!--                                    </tr>-->
+<!--                                    <tr class="pricing-table-box-list">-->
+<!--                                        <td class="first-row">Responsive Design</td>-->
+<!--                                        <td class="second-row">$1,000 - $25,000</td>-->
+<!--                                    </tr>-->
+<!--                                    <tr class="pricing-table-box-list">-->
+<!--                                        <td class="first-row">Interactive Multimedia</td>-->
+<!--                                        <td class="second-row">$150 - $10,000</td>-->
+<!--&lt;!&ndash;                                        <td class="second-row">50</td>&ndash;&gt;-->
+<!--                                    </tr>-->
+
+
+
+
+
+                                </tbody>
+                            </table>
+                            <br>
+                            <br>
+                            <h3>Website maintenance costs for 2021</h3>
+                            <p>A website requires <a href="{% url 'site-main' %}" style="color:blue;">routine maintenance</a> — without it, your website will go offline. That’s why businesses need to ask not only, “How much does it cost to build a website?” but also, “How much does it cost to maintain a website?”.</p>
+                            <div class="col-md-6 question monthly-cost-question">
+									<h4>How Much Does a<br/>Website Cost Per Month?</h4>
+									<p>On a monthly basis, your website can <strong>cost $35 to $5000 per month</strong>. It's worth mentioning, however, that prices can fluctuate month to month. In some cases, service providers may even request upfront payment for the entire year.</p>
+                            </div>
+                            <div class="col-md-6 question yearly-cost-question">
+									<h4>How Much Does a<br/>Website Cost Per Year?</h4>
+									<p>On a yearly basis, your website can <strong>cost $400 to $60,000 per year</strong>. In some cases, your annual website maintenance costs may increase due to one-time investments, like the redesign of a logo or critical page.</p>
+                            </div>
+
+                            <div class="ttm-btn-box pr-20 pb-20">
+                                    <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-round ttm-icon-btn-right ttm-btn-bgcolor-skincolor" href="{% url 'maint' %}" title="">GET A CUSTOM PROPOSAL <br>for Marketing My Site!<i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                        </div>
+                        <!-- ttm-service-single-content-are end -->
+                    </div>
+                    <div class="col-lg-3 widget-area">
+                        <aside class="widget widget-nav-menu">
+                            <ul class="widget-menu">
+                                <li class="active"><a href="{% url 'it' %}">IT Consultancy</a></li>
+                                <li><a href="{% url 'digital' %}">Digital Services</a></li>
+                                <li><a href="{% url 'advisory' %}">Advisory Services</a></li>
+                                <li><a href="{% url 'data' %}">Data Structuring</a></li>
+                                <li><a href="{% url 'design' %}">Web Development</a></li>
+                                <li><a href="{% url 'mobile' %}">Mobile App Development</a></li>
+                                <li><a href="{% url 'training' %}">Corporate Training</a></li>
+                                <li><a href="{% url 'content' %}">Content Engineering</a></li>
+                                <li><a href="{% url 'boost' %}">Boost Your Business</a></li>
+                                <li><a href="{% url 'cyber' %}">Cyber Security</a></li>
+                            </ul>
+                        </aside>
+                        <aside class="widget widget-text">
+                            <h3 class="widget-title">About Us</h3>
+                            <div class="ttm-author-widget">
+                                <div class="author-widget_img">
+                                    <img class="author-img img-fluid" src="{% static 'images/author-img.jpg' %}" alt="author image">
+                                </div>
+                                <h4 class="author-name">BluWire-author</h4>
+                                <p class="author-widget_text">The positive distinction within the World Inspiring of Success and Connections of People and Organizations. We Are Here To Help Make Your Technology Safe And Easy To Use.</p>
+                            </div>
+                        </aside>
+
+                        <aside class="widget widget_media_image">
+                            <div class="banner-img-box ttm-textcolor-white text-left">
+                                <div class="featured-content featured-content-banner">
+                                    <i class="flaticon-24-hours-support"></i>
+                                    <div class="featured-title ttm-box-title">
+                                        <h5>How Can We Help?</h5>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>If you need any help, please<br> feel free to contact us.</p>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa fa-phone"></i><a href="tel:+23408028720549">+23408028720549</a></li>
+                                        <li><i class="fa fa-envelope-o"></i><a href="mailto:info@bluwire-il.com">info@bluwire-il.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                        <aside class="widget widget-text">
+                            <h4 class="widget-title">School System</h4>
+                            <div class="ttm-author-widget">
+                                <div class="author-widget_img">
+                                    <img class="author-img img-fluid" src="{% static 'images/resp.png' %}" alt="School">
+                                </div>
+<!--                                <h4 class="author-name">BluWire-author</h4>-->
+<!--                                <p class="author-widget_text">The positive distinction within the World Inspiring of Success and Connections of People and Organizations. We Are Here To Help Make Your Technology Safe And Easy To Use.</p>-->
+                           </div>
+                        </aside>
+                        <aside class="widget widget-text">
+                            <h4 class="widget-title">Inventory System</h4>
+                            <div class="ttm-author-widget">
+                                <div class="author-widget_img">
+                                    <img class="author-img img-fluid" src="{% static 'images/inventory-manage.jpg' %}" alt="Inventory">
+                                </div>
+<!--                                <h4 class="author-name">BluWire-author</h4>-->
+<!--                                <p class="author-widget_text">The positive distinction within the World Inspiring of Success and Connections of People and Organizations. We Are Here To Help Make Your Technology Safe And Easy To Use.</p>-->
+                           </div>
+                        </aside>
+                        <aside class="widget widget-text">
+                            <h4 class="widget-title">Hospital Management</h4>
+                            <div class="ttm-author-widget">
+                                <div class="author-widget_img">
+                                    <img class="author-img img-fluid" src="{% static 'images/hospital-manage.jpg' %}" alt="Hospital">
+                                </div>
+<!--                                <h4 class="author-name">BluWire-author</h4>-->
+<!--                                <p class="author-widget_text">The positive distinction within the World Inspiring of Success and Connections of People and Organizations. We Are Here To Help Make Your Technology Safe And Easy To Use.</p>-->
+                           </div>
+                        </aside>
+                        <aside class="widget widget-text">
+                            <h4 class="widget-title">Hotel Management</h4>
+                            <div class="ttm-author-widget">
+                                <div class="author-widget_img">
+                                    <img class="author-img img-fluid" src="{% static 'images/hotel.png' %}" alt="Hotel">
+                                </div>
+<!--                                <h4 class="author-name">BluWire-author</h4>-->
+<!--                                <p class="author-widget_text">The positive distinction within the World Inspiring of Success and Connections of People and Organizations. We Are Here To Help Make Your Technology Safe And Easy To Use.</p>-->
+                           </div>
+                        </aside>
+                        <aside class="widget widget-text">
+                            <h4 class="widget-title">Software Dev</h4>
+                            <div class="ttm-author-widget">
+                                <div class="author-widget_img">
+                                    <img class="author-img img-fluid" src="{% static 'images/software-development.jpg' %}" alt="Software-Dev">
+                                </div>
+<!--                                <h4 class="author-name">BluWire-author</h4>-->
+<!--                                <p class="author-widget_text">The positive distinction within the World Inspiring of Success and Connections of People and Organizations. We Are Here To Help Make Your Technology Safe And Easy To Use.</p>-->
+                           </div>
+                        </aside>
+            </div>
+                </div>
+            </div>
+        </div>
+        <!-- sidebar end -->
+    </div><!--site-main end-->
+
+{% endblock content %}
+
+
+

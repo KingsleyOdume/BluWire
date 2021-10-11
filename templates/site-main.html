@@ -1,0 +1,444 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+<title>How Much Should a Website Cost? (The Official 2021 Guide) | BluWire</title>
+<meta name="description" content="Curious how much a website should cost to develop and maintain? Web design costs $1,000 to $150,000, while site maintenance costs $200 to $60,000 yearly." />
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<style>
+    body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.pricing-table-box {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+	width: 100%;
+}
+
+.pricing-table-box td {
+    padding: 0px;
+    border-left: 1px solid transparent;
+}
+
+.pricing-table-box .pricing-table-box-list td {
+    padding: 10px 8px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 14px;
+    background: #F9F9F9;
+}
+
+.pricing-table-box .pricing-table-box-list .glyphicon-ok {
+    color: #68AF27;
+}
+
+.pricing-table-box .pricing-table-box-list .glyphicon-remove {
+    color: #C22439;
+}
+
+.pricing-table-box .pricing-table-box-list td:first-child {
+    font-weight: 400;
+    text-align: left;
+    border-left: 0px;
+    font-size: 14px;
+    color: #060606;
+}
+
+.pricing-table-box .pricing-table-box-list:nth-child(2n) td {
+    background: #F2F2F2;
+}
+
+.pricing-table-box .pricing-table-box-text h2 {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: #8a8a8a;
+}
+
+.pricing-table-box .pricing-table-box-text p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
+}
+
+.pricing-table-box .pricing-table-box-item {
+    color: #FFF;
+}
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-head {
+    padding: 10px 5px;
+    text-align: center;
+    background-color: #2ac4ea!important;
+    box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    -moz-box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    -webkit-box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    -o-box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+}
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-head p {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-price {
+    padding: 15px 10px;
+    text-align: center;
+    color: #009AD7;
+    background: #F9F9F9;
+}
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-price p {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 0px;
+}
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-price p span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-price > span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #009AD7
+}
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-purchase {
+    padding: 10px 5px;
+    background: #FFF;
+}
+
+.pricing-table-box-item-purchase .btn {
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    background-color: #2ac4ea;
+    box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    -moz-box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    -webkit-box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    -o-box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    border: none;
+    padding: 11px 0;
+}
+
+.btn-success.active.focus,
+.btn-success.active:focus,
+.btn-success.active:hover,
+.btn-success:active.focus,
+.btn-success:active:focus,
+.btn-success:active:hover,
+.open>.dropdown-toggle.btn-success.focus,
+.open>.dropdown-toggle.btn-success:focus,
+.open>.dropdown-toggle.btn-success:hover {
+    color: inherit!important;
+    background-color: inherit!important;
+    border-color: inherit!important;
+}
+
+.pricing-table-box .pricing-table-box-list:nth-child(1n) td.second-row {
+    background: #F2F2F2;
+}
+
+.pricing-table-box .pricing-table-box-list:nth-child(2n) td.second-row {
+    background: #dedede;
+}
+
+.pricing-table-box .pricing-table-box-list:nth-child(1n) td.fourth-row {
+    background: #F2F2F2;
+}
+
+.pricing-table-box .pricing-table-box-list:nth-child(2n) td.fourth-row {
+    background: #dedede;
+}
+
+
+/* Color Version 2*/
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-head.color2 {
+    background-color: #f6653c!important;
+}
+
+.pricing-table-box-item-purchase .btn.color2 {
+    background-color: #f6653c!important;
+}
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-price.color2 {
+    color: #2D4A8A!important;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!--  <div class="row">-->
+<!--            <div class="col-md-12">-->
+<!--                &lt;!&ndash; section title &ndash;&gt;-->
+<!--                <div class="section-title text-center with-desc clearfix">-->
+<!--                    <div class="title-header">-->
+<!--                        <h1 class="title">How Much Should a Website Cost in 2021?</h1>-->
+<!--                        <center style="padding-left:250px; padding-right:250px;">Whether your business operates offline or online, it’s crucial to build and maintain a website in today’s digital world. How much should a website cost, though? On average, the upfront cost of a site, which includes launching and designing it, is $2,000 to $150,000, while routine website maintenance ranges from $35 to $5000 per month — or $200 to $60,000 per year.</center>-->
+<!--                    </div>-->
+<!--                </div>&lt;!&ndash; section title end &ndash;&gt;-->
+<!--                <div class="container" style="background-color:#F7F9FE;">-->
+<!--                        <h2 class="title">How much does a website cost?</h2>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+
+        <!--site-main start-->
+        <div class="site-main">
+        <!-- sidebar -->
+        <div class="sidebar ttm-sidebar ttm-bgcolor-white clearfix">
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-lg-9 content-area order-lg-2">
+                        <!-- ttm-service-single-content-are -->
+                        <!-- ttm-service-single-content-are -->
+                        <div class="ttm-service-single-content-area">
+                            <div class="ttm_single_image-wrapper mb-35">
+                                <img class="img-fluid" src="{% static 'images/web-dev.png' %}" alt="Website Development">
+                            </div>
+                            <div class="ttm-service-description">
+                                <h2>Website Maintenance, Site Security, Support</h2>
+                                <p>BluWire is a top website maintenance services company, helping businesses across the globe improve the performance and security of their websites. Whether you’re looking for a monthly, hourly, or after-hours website maintenance plan, BluWire provides the experience and expertise your company demands.</p>
+                            </div>
+
+<!--                            <br>-->
+<!--                            <br>-->
+<!--                            <h3>Explore website maintenance service plans</h3>-->
+
+                            <div class="demo10">
+                                <div class="container">
+                                    <h4 class="py-4 text-center">Explore website maintenance service plans</h4>
+<!--                                    <p style="color:#000;">We are social media management agency, offering competitive social media management services. With a custom social media marketing service plan, your business can start building brand awareness, as well as generating revenue from social media platforms like Facebook, LinkedIn, Instagram, and more.</p>-->
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="pricingTable10">
+                                                <div class="pricingTable-header">
+                                                    <h4 class="heading">Security patches & CMS updates</h4>
+                                                    <span class="price-value">
+                                                        <span class="currency">$</span> 200
+                                                        <span class="month">/mo</span>
+                                                    </span>
+                                                </div>
+                                                <div class="pricing-content">
+                                                    <ul>
+                                                        <li>Quarterly CMS security patches</li>
+                                                        <li>Annual CMS version upgrades</li>
+                                                        <li>Monthly full-site backup and storage</li>
+<!--                                                        <li>M, W, F boosted post comment monitoring</li>-->
+<!--                                                        <li>$10 - $20 Booted Post AD Spend</li>-->
+                                                    </ul>
+                    <!--                                <a href="#" class="read">sign up</a>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="pricingTable10">
+                                                <div class="pricingTable-header">
+                                                    <h4 class="heading">Full web maintenance</h4>
+                                                    <span class="price-value">
+                                                        <span class="currency">$</span> 380
+                                                        <span class="month">/mo</span>
+                                                    </span>
+                                                </div>
+                                                <div class="pricing-content">
+                                                    <ul>
+                                                        <li>Quarterly CMS security patches</li>
+                                                        <li>Daily security scan</li>
+                                                        <li>Up to 3 hours of design or development time</li>
+<!--                                                        <li>Daily boosted post comment monitoring</li>-->
+<!--                                                        <li>$10 - $30 Booted Post AD Spend</li>-->
+                                                    </ul>
+                    <!--                                <a href="#" class="read">sign up</a>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="pricingTable10">
+                                                <div class="pricingTable-header">
+                                                    <h4 class="heading">After-hours maintenance</h4>
+                                                    <span class="price-value">
+                                                        <span class="currency">$</span> 1500
+                                                        <span class="month">/mo</span>
+                                                    </span>
+                                                </div>
+                                                <div class="pricing-content">
+                                                    <ul>
+                                                        <li>Quarterly CMS security patches</li>
+                                                        <li>Urgent CMS support/restore</li>
+                                                        <li>Up to 5 hours of design or development time</li>
+<!--                                                        <li>Daily boosted post comment monitoring</li>-->
+<!--                                                        <li>$10 - $40 Booted Post AD Spend</li>-->
+
+                                                    </ul>
+                    <!--                                <a href="#" class="read">sign up</a>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-6">
+                                            <div class="pricingTable10">
+                                                <div class="pricingTable-header">
+                                                    <h4 class="heading">Complete Update</h4>
+                                                    <span class="price-value">
+                                                        <span class="currency">$</span> 800
+                                                        <span class="month">/mo</span>
+                                                    </span>
+                                                </div>
+                                                <div class="pricing-content">
+                                                    <ul>
+                                                        <li>Quarterly CMS security patches</li>
+                                                        <li>Update of all system</li>
+                                                        <li>Up to 5 hours of design or development time</li>
+<!--                                                        <li>Daily boosted post comment monitoring</li>-->
+<!--                                                        <li>$40 - $60 Booted Post AD Spend</li>-->
+
+                                                    </ul>
+                    <!--                                <a href="#" class="read">sign up</a>-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div  style="text-align:center;">
+                                        <a href="{% url 'site-maint' %}" style="display:inline-block;font-size:16px;color:#fff;text-transform:uppercase;background:#2D4A8A;border-radius:50px;padding:8px 25px;margin:30px 0;transition:all .3s ease 0s">See Full Deliverables</a>
+<!--                                        <br>-->
+<!--                                        <br>-->
+<!--                                        <br>-->
+<!--                                        <h4>Drive results with social media marketing services</h4>-->
+<!--                                        <p style="color:#000000;">Almost 75% of people use social media when making a purchase decision. It’s a critical touchpoint for shoppers in the business-to-consumer (B2C) and business-to-business (B2B) industry, which is why companies invest in professional social media services.</p>-->
+<!--                                        <p style="color:#000000;">With a client recommendation score that exceeds the industry average by 488 percent, BluWire is a trusted choice for social media marketing services. As your partner, we’ll help your business improve its brand awareness, customer loyalty, revenue, and more.</p>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <h3>Web Maintenance Services Built for Your Business</h3>
+                            <p>With every online search, 50 percent of users discover a new company, product, or service. They visit your website, explore your products, browse your services, and get a first impression of your business. That first impression can make or break your company’s next sale.</p>
+                            <p>For businesses today, this fact makes website maintenance a top priority.</p>
+                            <p>As your partner, BluWire provides your company with a custom and comprehensive website maintenance plan that helps your business deliver a fast, secure, and seamless online experience. Plus, as a full-service digital marketing agency, we offer turnkey solutions for maximizing your site’s performance.</p>
+                            <p>Are you ready to dive head-first into website maintenance? Contact us online to chat with an experienced strategist from our website maintenance team about keeping your website in tip-top shape around the clock.</p>
+                            <br>
+                            <br>
+                            <div class="ttm-btn-box pr-20 pb-20">
+                                    <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-round ttm-icon-btn-right ttm-btn-bgcolor-skincolor" href="{% url 'contact' %}" title="">Contact us online<i class="fa fa-arrow-circle-right"></i></a>
+                            </div>
+                        </div>
+                        <!-- ttm-service-single-content-are end -->
+                    </div>
+                    <div class="col-lg-3 widget-area">
+                        <aside class="widget widget-nav-menu">
+                            <ul class="widget-menu">
+                                <li class="active"><a href="{% url 'it' %}">IT Consultancy</a></li>
+                                <li><a href="{% url 'digital' %}">Digital Services</a></li>
+                                <li><a href="{% url 'advisory' %}">Advisory Services</a></li>
+                                <li><a href="{% url 'data' %}">Data Structuring</a></li>
+                                <li><a href="{% url 'design' %}">Web Development</a></li>
+                                <li><a href="{% url 'mobile' %}">Mobile App Development</a></li>
+                                <li><a href="{% url 'training' %}">Corporate Training</a></li>
+                                <li><a href="{% url 'content' %}">Content Engineering</a></li>
+                                <li><a href="{% url 'boost' %}">Boost Your Business</a></li>
+                                <li><a href="{% url 'cyber' %}">Cyber Security</a></li>
+                            </ul>
+                        </aside>
+                        <aside class="widget widget-text">
+                            <h3 class="widget-title">About Us</h3>
+                            <div class="ttm-author-widget">
+                                <div class="author-widget_img">
+                                    <img class="author-img img-fluid" src="{% static 'images/author-img.jpg' %}" alt="author image">
+                                </div>
+                                <h4 class="author-name">BluWire-author</h4>
+                                <p class="author-widget_text">The positive distinction within the World Inspiring of Success and Connections of People and Organizations. We Are Here To Help Make Your Technology Safe And Easy To Use.</p>
+                            </div>
+                        </aside>
+
+                        <aside class="widget widget_media_image">
+                            <div class="banner-img-box ttm-textcolor-white text-left">
+                                <div class="featured-content featured-content-banner">
+                                    <i class="flaticon-24-hours-support"></i>
+                                    <div class="featured-title ttm-box-title">
+                                        <h5>How Can We Help?</h5>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>If you need any help, please<br> feel free to contact us.</p>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa fa-phone"></i><a href="tel:+23408028720549">+23408028720549</a></li>
+                                        <li><i class="fa fa-envelope-o"></i><a href="mailto:info@bluwire-il.com">info@bluwire-il.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+<!--                        <aside class="widget widget-text">-->
+<!--                            <h4 class="widget-title">School System</h4>-->
+<!--                            <div class="ttm-author-widget">-->
+<!--                                <div class="author-widget_img">-->
+<!--                                    <img class="author-img img-fluid" src="{% static 'images/resp.png' %}" alt="School">-->
+<!--                                </div>-->
+<!--&lt;!&ndash;                                <h4 class="author-name">BluWire-author</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <p class="author-widget_text">The positive distinction within the World Inspiring of Success and Connections of People and Organizations. We Are Here To Help Make Your Technology Safe And Easy To Use.</p>&ndash;&gt;-->
+<!--                           </div>-->
+<!--                        </aside>-->
+<!--                        <aside class="widget widget-text">-->
+<!--                            <h4 class="widget-title">Inventory System</h4>-->
+<!--                            <div class="ttm-author-widget">-->
+<!--                                <div class="author-widget_img">-->
+<!--                                    <img class="author-img img-fluid" src="{% static 'images/inventory-manage.jpg' %}" alt="Inventory">-->
+<!--                                </div>-->
+<!--&lt;!&ndash;                                <h4 class="author-name">BluWire-author</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <p class="author-widget_text">The positive distinction within the World Inspiring of Success and Connections of People and Organizations. We Are Here To Help Make Your Technology Safe And Easy To Use.</p>&ndash;&gt;-->
+<!--                           </div>-->
+<!--                        </aside>-->
+<!--                        <aside class="widget widget-text">-->
+<!--                            <h4 class="widget-title">Hospital Management</h4>-->
+<!--                            <div class="ttm-author-widget">-->
+<!--                                <div class="author-widget_img">-->
+<!--                                    <img class="author-img img-fluid" src="{% static 'images/hospital-manage.jpg' %}" alt="Hospital">-->
+<!--                                </div>-->
+<!--&lt;!&ndash;                                <h4 class="author-name">BluWire-author</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <p class="author-widget_text">The positive distinction within the World Inspiring of Success and Connections of People and Organizations. We Are Here To Help Make Your Technology Safe And Easy To Use.</p>&ndash;&gt;-->
+<!--                           </div>-->
+<!--                        </aside>-->
+<!--                        <aside class="widget widget-text">-->
+<!--                            <h4 class="widget-title">Hotel Management</h4>-->
+<!--                            <div class="ttm-author-widget">-->
+<!--                                <div class="author-widget_img">-->
+<!--                                    <img class="author-img img-fluid" src="{% static 'images/hotel.png' %}" alt="Hotel">-->
+<!--                                </div>-->
+<!--&lt;!&ndash;                                <h4 class="author-name">BluWire-author</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <p class="author-widget_text">The positive distinction within the World Inspiring of Success and Connections of People and Organizations. We Are Here To Help Make Your Technology Safe And Easy To Use.</p>&ndash;&gt;-->
+<!--                           </div>-->
+<!--                        </aside>-->
+<!--                        <aside class="widget widget-text">-->
+<!--                            <h4 class="widget-title">Software Dev</h4>-->
+<!--                            <div class="ttm-author-widget">-->
+<!--                                <div class="author-widget_img">-->
+<!--                                    <img class="author-img img-fluid" src="{% static 'images/software-development.jpg' %}" alt="Software-Dev">-->
+<!--                                </div>-->
+<!--&lt;!&ndash;                                <h4 class="author-name">BluWire-author</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <p class="author-widget_text">The positive distinction within the World Inspiring of Success and Connections of People and Organizations. We Are Here To Help Make Your Technology Safe And Easy To Use.</p>&ndash;&gt;-->
+<!--                           </div>-->
+<!--                        </aside>-->
+            </div>
+                </div>
+            </div>
+        </div>
+        <!-- sidebar end -->
+    </div><!--site-main end-->
+
+{% endblock content %}
+
+

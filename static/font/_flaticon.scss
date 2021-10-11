@@ -1,0 +1,78 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 05/03/2021 05:41
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-online:before { content: "\f100"; }
+.flaticon-maintenance:before { content: "\f101"; }
+.flaticon-digital-marketing:before { content: "\f102"; }
+.flaticon-interactive:before { content: "\f103"; }
+.flaticon-24-hours:before { content: "\f104"; }
+.flaticon-internet:before { content: "\f105"; }
+.flaticon-satisfaction:before { content: "\f106"; }
+.flaticon-24-hours-support:before { content: "\f107"; }
+.flaticon-electronics:before { content: "\f108"; }
+.flaticon-laptop:before { content: "\f109"; }
+.flaticon-wall-clock:before { content: "\f10a"; }
+.flaticon-geography:before { content: "\f10b"; }
+.flaticon-earth-grid:before { content: "\f10c"; }
+.flaticon-complete:before { content: "\f10d"; }
+.flaticon-search-option:before { content: "\f10e"; }
+.flaticon-monitor-screen:before { content: "\f10f"; }
+.flaticon-review:before { content: "\f110"; }
+.flaticon-withdraw:before { content: "\f111"; }
+.flaticon-credit-card:before { content: "\f112"; }
+    
+    $font-Flaticon-online: "\f100";
+    $font-Flaticon-maintenance: "\f101";
+    $font-Flaticon-digital-marketing: "\f102";
+    $font-Flaticon-interactive: "\f103";
+    $font-Flaticon-24-hours: "\f104";
+    $font-Flaticon-internet: "\f105";
+    $font-Flaticon-satisfaction: "\f106";
+    $font-Flaticon-24-hours-support: "\f107";
+    $font-Flaticon-electronics: "\f108";
+    $font-Flaticon-laptop: "\f109";
+    $font-Flaticon-wall-clock: "\f10a";
+    $font-Flaticon-geography: "\f10b";
+    $font-Flaticon-earth-grid: "\f10c";
+    $font-Flaticon-complete: "\f10d";
+    $font-Flaticon-search-option: "\f10e";
+    $font-Flaticon-monitor-screen: "\f10f";
+    $font-Flaticon-review: "\f110";
+    $font-Flaticon-withdraw: "\f111";
+    $font-Flaticon-credit-card: "\f112";

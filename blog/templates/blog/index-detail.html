@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="BluWire Integrated Services is a progressive, full service IT organisation committed to providing effective, accurate, and quality Computer Training, IT Consult">
+<meta name="keywords" content="mobile app development company abuja, certification courses in nigeria,computer courses in nigeria,professional courses in nigeria,it professional courses in nigeria,it courses in nigeria,it training courses in nigeria,information technology certification">
+<meta name="robots" content="index, follow">
+<meta name="copyright" content="2020 BluWire-il">
+<meta name="language" content="EN">
+<meta name="generator" content="FreeMetaTagGenerator.com">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+{% block title %}
+<title>BluWire Blog | Get updates, career advice, and job market news on the FutureLearn Blog</title>
+{% endblock %}
+<script src="https://kit.fontawesome.com/3ae624c60c.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- favicon icon -->
+<link rel="shortcut icon" href="{% static 'images/Bluwire.jpeg' %}" />
+
+<!-- bootstrap -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
+
+<!-- animate -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}"/>
+
+<!-- owl-carousel -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.css' %}">
+
+<!-- fontawesome -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'font/flaticon.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'font/flaticon.svg' %}"/>
+<!-- themify -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/themify-icons.css' %}"/>
+
+<!-- flaticon -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/flaticon.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'fonts/flaticon..woff2' %}"/>
+
+
+<!-- REVOLUTION LAYERS STYLES -->
+
+<link rel="stylesheet" type="text/css" href="{% static 'revolution/css/rs6.css' %}">
+
+<!-- prettyphoto -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/prettyPhoto.css' %}">
+
+<!-- shortcodes -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/shortcodes.css' %}"/>
+
+<!-- main -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}"/>
+
+<!-- responsive -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}"/>
+
+</head>
+
+<body>
+
+    <!--page start-->
+    <div class="page">
+
+        <!--header start-->
+        <header id="masthead" class="header ttm-header-style-01">
+            <!-- ttm-topbar-wrapper -->
+            <div class="ttm-topbar-wrapper clearfix">
+                <div class="container">
+                    <div class="ttm-topbar-content">
+                        <ul class="top-contact text-left">
+                            <li><i class="fas fa-map-marker"></i>Plot 24, IT Igbani Street, Jabi, Abuja</li>
+                            <li><i class="fas fa-envelope"></i><a href="mailto:info@bluwire-il.com">info@bluwire-il.com</a></li>
+                        </ul>
+                        <div class="topbar-right text-right">
+                            <ul class="top-contact">
+                                <li><i class="fas fa-clock-o"></i>Office Hour: 09:00am - 5:00pm</li>
+                            </ul>
+                            <div class="ttm-social-links-wrapper list-inline">
+                               <ul class="social-icons">
+                                    <li><a href="https://www.facebook.com/BluWire-102816105211386" target="_blank" class=" tooltip-bottom" data-tooltip="Facebook"><i class="fab fa-facebook-square"></i></a>
+                                    </li>
+                                    <li><a href="https://twitter.com/BluwireI" target="_blank" class=" tooltip-bottom" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li><a href="https://www.instagram.com/bluwire.il/" target="_blank" class=" tooltip-bottom" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li><a href="https://www.youtube.com/channel/UC2zeubgFgA_cx26lXc_RSaQ" target="_blank" class=" tooltip-bottom" data-tooltip="YouTube"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                    <li><a href="https://www.linkedin.com/company/bluwire-integrated-services-ltd" target="_blank" class=" tooltip-bottom" data-tooltip="Linkedin"><i class="fab fa-linkedin"></i></a>
+                                    </li>
+                               </ul>
+                            </div>
+                            <div class="header-btn">
+                                <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-round ttm-btn-bgcolor-skincolor" href="{% url 'contact' %}">Get A Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ttm-topbar-wrapper end -->
+            <!-- ttm-header-wrap -->
+            <div class="ttm-header-wrap">
+                <!-- ttm-stickable-header-w -->
+                <div id="ttm-stickable-header-w" class="ttm-stickable-header-w clearfix">
+                    <div id="site-header-menu" class="site-header-menu">
+                        <div class="site-header-menu-inner ttm-stickable-header">
+                            <div class="container">
+                                <!-- site-branding -->
+                                <div class="site-branding">
+                                    <a class="home-link" href="/" title="BluWire-il" rel="home">
+                                        <img id="logo-img" class="img-fluid" src="{% static 'images/BluWireil.png' %}" alt="BluWire logo">
+                                    </a>
+                                </div><!-- site-branding end -->
+                                <!--site-navigation -->
+                                <div id="site-navigation" class="site-navigation">
+                                    <div class="ttm-rt-contact">
+                                        <!-- header-icons -->
+                                        <div class="ttm-header-icons ">
+                                            <span class="ttm-header-icon ttm-header-cart-link">
+                                                <a href="#"><i class="ti ti-shopping-cart"></i>
+                                                    <span class="number-cart">0</span>
+                                                </a>
+                                            </span>
+                                            <div class="ttm-header-icon ttm-header-search-link">
+                                                <a href="#"><i class="ti ti-search"></i></a>
+                                                <div class="ttm-search-overlay">
+                                                    <form method="get" class="ttm-site-searchform" action="#">
+                                                        <div class="w-search-form-h">
+                                                            <div class="w-search-form-row">
+                                                                <div class="w-search-input">
+                                                                    <input type="search" class="field searchform-s" name="s" placeholder="Type Word Then Enter...">
+                                                                    <button type="submit">
+                                                                        <i class="ti ti-search"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div><!-- header-icons end -->
+                                    </div>
+                                    <div class="ttm-menu-toggle">
+                                        <input type="checkbox" id="menu-toggle-form" />
+                                        <label for="menu-toggle-form" class="ttm-menu-toggle-block">
+                                            <span class="toggle-block toggle-blocks-1"></span>
+                                            <span class="toggle-block toggle-blocks-2"></span>
+                                            <span class="toggle-block toggle-blocks-3"></span>
+                                        </label>
+                                    </div>
+                                    <nav id="menu" class="menu">
+                                        <ul class="dropdown">
+                                           <li class="active"><a href="/">Home</a></li>
+
+
+                                            <li><a href="{% url 'services' %}">Services</a>
+                                                <ul>
+                                                    <li><a href="{% url 'services' %}">Corporate Services</a></li>
+                                                    <li><a href="{% url 'it' %}">IT Consultancy</a></li>
+                                                    <li><a href="{% url 'digital' %}">Digital Services</a></li>
+                                                    <li><a href="{% url 'advisory' %}">Advisory Services</a></li>
+                                                    <li><a href="{% url 'data' %}">Data Structuring</a></li>
+                                                    <li><a href="{% url 'design' %}">Web Development</a></li>
+                                                    <li><a href="{% url 'mobile' %}">Mobile App Development</a></li>
+                                                    <li><a href="{% url 'content' %}">Content Engineering</a></li>
+                                                    <li><a href="{% url 'boost' %}">Boost Your Business</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Programs</a>
+                                                <ul>
+                                                    <li><a href="{% url 'software' %}">Developed Software</a></li>
+                                                    <li><a href="{% url 'cyber' %}">Cyber Security</a></li>
+                                                    <li><a href="{% url 'training' %}">Corporate Training</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Latest</a>
+                                                <ul>
+                                                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                                                    <li><a href="{% url 'projects' %}">Gallery</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li><a href="{% url 'about' %}">About Us</a></li>
+
+
+                                            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+<!
+                                        </ul>
+                                    </nav>
+                                </div><!-- site-navigation end-->
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- ttm-stickable-header-w end-->
+            </div><!--ttm-header-wrap end -->
+
+        </header><!--header end-->
+
+<!-- page-title -->
+<!--site-main start-->
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="site-main">
+        <!-- sidebar -->
+        <div class="sidebar ttm-bgcolor-white clearfix">
+            <div class="container">
+                    <a href="{% url 'blog' %}" class="tag-cloud-link">Back to BlogPage</a>
+                <!-- row -->
+                <div class="row">
+                    <div class="col-lg-9 content-area">
+                        <!-- ttm-service-single-content-are -->
+                        <article class="post ttm-blog-classic clearfix">
+                            <!-- post-featured-wrapper -->
+                            <div class="ttm-post-featured-wrapper ttm-featured-wrapper">
+                                <div class="ttm-post-featured">
+                                    <img class="img-fluid" src="{{ post.img.url }}" alt="post-01">
+                                </div>
+                            </div><!-- post-featured-wrapper end -->
+                            <!-- ttm-blog-classic-content -->
+                            <div class="ttm-blog-classic-content">
+                                <div class="ttm-post-entry-header">
+                                    <div class="post-meta">
+                                        <span class="ttm-meta-line byline"><i class="fa fa-user"></i>{{ post.author }}</span>
+                                        <span class="ttm-meta-line entry-date"><i class="fa fa-calendar"></i><small class="entry-date published" datetime="">{{ post.date_posted }}</small></span>
+                                        <span class="ttm-meta-line tags-links"><i class="fa fa-comment-o"></i>{{ comments }}</span>
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <header class="entry-header">
+                                        <h2 class="entry-title"><span >{{ post.intro }}</span></h2>
+                                    </header>
+                                    <div class="ttm-box-desc-text">
+                                        <p>{{ post.body|safe|linebreaks }}</p>
+                                    </div>
+                                    <!-- separator -->
+                                    <div class="separator">
+                                        <div class="sep-line mt-25 mb-25"></div>
+                                    </div>
+                                    <!-- separator -->
+                                    <div class="ttm-blogbox-desc-footer">
+                                        <div class="ttm-blogbox-footer-readmore d-inline-block">
+<!--                                            <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-skincolor btn-inline ttm-icon-btn-right" href="">Read More <i class="ti ti-angle-double-right"></i></a>-->
+                                        </div>
+
+                                        <div class="ttm-commentbox d-inline-block">
+                                            {% for comment in post.comments.all %}
+                                            <div>
+                                            <span><i class="fa fa-comments"></i>{{ comment.name }}<small>&nbsp;&nbsp;{{ comment.date_posted }}</small></span>
+                                            <span>{{ comment.body }}</span>
+                                            </div>
+                                            <div>
+                                            {% empty %}
+                                                <p>No comments</p>
+                                            </div>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- ttm-blog-classic-content end -->
+                        </article>
+                        <!-- ttm-service-single-content-are end -->
+                        <!-- ttm-service-single-content-are -->
+
+
+                        <!-- ttm-service-single-content-are end -->
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <form method="post" action=".">
+                                {% csrf_token %}
+                                {{ form.as_p}}
+
+                                <button type="submit" id="submit" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-skincolor" value="">
+                                Submit
+                                </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 widget-area">
+                        <aside class="widget widget-search">
+                            <form role="search" method="get" class="search-form  box-shadow" action="#">
+                                <div class="form-group">
+                                    <input name="search" type="text" class="form-control bg-white" placeholder="Search....">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </form>
+                        </aside>
+                        <aside class="widget widget-categories">
+                            <h3 class="widget-title">Categories</h3>
+                            <ul>
+                                <li><a href="{% url 'it' %}">Consulting</a></li>
+                                <li><a href="{% url 'mobile' %}">Mobile App Dev</a></li>
+                                <li><a href="{% url 'design' %}">Design</a></li>
+                                <li><a href="{% url 'digital' %}">Digital</a></li>
+                                <li><a href="{% url 'boost' %}">Marketing</a></li>
+                                <li><a href="{% url 'advisory' %}">Advisory Services</a></li>
+                                <li><a href="{% url 'training' %}">Corporate Training</a></li>
+                                <li><a href="{% url 'data' %}">Data Structuring</a></li>
+                            </ul>
+                        </aside>
+                        <aside class="widget post-widget">
+                            <h3 class="widget-title">Latest News</h3>
+                            <ul class="widget-post ttm-recent-post-list">
+                                <li>
+                                    <a href="http://localhost:8000/blog/How-to-Lead-Your-Team-Through-Change/"><img src="{% static 'images/blog/01.jpg' %}" alt="post-img"></a>
+                                    <a href="http://localhost:8000/blog/How-to-Lead-Your-Team-Through-Change/">How to Lead Your Team Through Change.</a>
+                                    <span class="post-date"><i class="fa fa-calendar"></i>May 01, 2020</span>
+                                </li>
+                                <li>
+                                    <a href="http://localhost:8000/blog/test-2/"><img src="{% static 'images/blog/02.jpg' %}" alt="post-img"></a>
+                                    <a href="http://localhost:8000/blog/test-2/">You Must Try 20 Secret Of Digital Transform</a>
+                                    <span class="post-date"><i class="fa fa-calendar"></i>Jan 03, 2021</span>
+                                </li>
+                                <li>
+                                    <a href="http://localhost:8000/blog/test-3/"><img src="{% static 'images/blog/03.jpg' %}" alt="post-img"></a>
+                                    <a href="http://localhost:8000/blog/test-3/">10 PHP Frameworks You Need To Use Anywhere</a>
+                                    <span class="post-date"><i class="fa fa-calendar"></i>May 05, 2019</span>
+                                </li>
+                            </ul>
+                        </aside>
+                        <aside class="widget widget widget_media_gallery">
+                            <h3 class="widget-title">Gallery</h3>
+                            <div class="">
+                                <div class="gallery-item">
+                                    <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" data-rel="prettyPhoto" href="images/blog/11-1200x800.jpg">
+                                        <img src="{% static 'images/blog/11.jpg' %}" class="img-fluid" alt="blog-img">
+                                    </a>
+                                </div>
+                                <div class="gallery-item">
+                                    <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" data-rel="prettyPhoto" href="images/blog/12-1200x800.jpg">
+                                        <img src="{% static 'images/blog/12.jpg' %}" class="img-fluid" alt="blog-img">
+                                    </a>
+                                </div>
+                                <div class="gallery-item">
+                                    <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" data-rel="prettyPhoto" href="images/blog/13-1200x800.jpg">
+                                        <img src="{% static 'images/blog/13.jpg' %}" class="img-fluid" alt="blog-img">
+                                    </a>
+                                </div>
+                                <div class="gallery-item">
+                                    <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" data-rel="prettyPhoto" href="images/blog/14-1200x800.jpg">
+                                        <img src="{% static 'images/blog/14.jpg' %}" class="img-fluid" alt="blog-img">
+                                    </a>
+                                </div>
+                                <div class="gallery-item">
+                                    <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" data-rel="prettyPhoto" href="images/blog/15-1200x800.jpg">
+                                        <img src="{% static 'images/blog/15.jpg' %}" class="img-fluid" alt="blog-img">
+                                    </a>
+                                </div>
+                                <div class="gallery-item">
+                                    <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" data-rel="prettyPhoto" href="images/blog/16-1200x800.jpg">
+                                        <img src="{% static 'images/blog/16.jpg' %}" class="img-fluid" alt="blog-img">
+                                    </a>
+                                </div>
+                                <div class="gallery-item">
+                                    <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" data-rel="prettyPhoto" href="images/blog/17-1200x800.jpg">
+                                        <img src="{% static 'images/blog/17.jpg' %}" class="img-fluid" alt="blog-img">
+                                    </a>
+                                </div>
+                                <div class="gallery-item">
+                                    <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" data-rel="prettyPhoto" href="images/blog/18-1200x800.jpg">
+                                        <img src="{% static 'images/blog/18.jpg' %}" class="img-fluid" alt="blog-img">
+                                    </a>
+                                </div>
+                                <div class="gallery-item">
+                                    <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" data-rel="prettyPhoto" href="images/blog/19-1200x800.jpg">
+                                        <img src="{% static 'images/blog/19.jpg' %}" class="img-fluid" alt="blog-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </aside>
+                        <aside class="widget tagcloud-widget">
+                            <h3 class="widget-title">Tags</h3>
+                            <div class="tagcloud">
+                                <a href="#" class="tag-cloud-link">Business</a>
+                                <a href="#" class="tag-cloud-link">Consult</a>
+                                <a href="#" class="tag-cloud-link">Cyber</a>
+                                <a href="#" class="tag-cloud-link">Data</a>
+                                <a href="#" class="tag-cloud-link">Design</a>
+                                <a href="#" class="tag-cloud-link">IT-Services</a>
+                                <a href="#" class="tag-cloud-link">IT-Solution</a>
+                                <a href="#" class="tag-cloud-link">Marketing</a>
+                                <a href="#" class="tag-cloud-link">Object</a>
+                                <a href="#" class="tag-cloud-link">Solution</a>
+                            </div>
+                        </aside>
+                        <aside class="widget widget-categories">
+                            <h3 class="widget-title">Archives</h3>
+                            <ul>
+                                <li><a href="#">October 2019</a></li>
+                                <li><a href="#">August 2019</a></li>
+                                <li><a href="#">July 2019</a></li>
+                                <li><a href="#">June 2019</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div><!-- row end -->
+            </div>
+        </div>
+        <!-- sidebar end -->
+    </div><!--site-main end-->
+
+
+   <!--footer start-->
+        <footer class="footer widget-footer clearfix">
+            <div class="first-footer ttm-bgcolor-skincolor ttm-bg ttm-bgimage-yes bg-img1">
+                <div class="ttm-row-wrapper-bg-layer ttm-bg-layer"></div>
+                <div class="container">
+                    <div class="row align-items-md-center">
+                        <div class="col-lg-4 col-md-4 col-sm-12 order-md-2">
+                            <div class="footer-logo text-sm-center">
+                                <img src="{% static 'images/BluWireil.png' %}" alt="footer-logo">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 order-md-1">
+                            <div class="text-left">
+                                <!--  featured-icon-box -->
+                                <div class="featured-icon-box left-icon icon-align-top">
+                                    <div class="featured-icon"><!--  featured-icon -->
+                                        <div class="ttm-icon ttm-icon_element-color-white ttm-btn-shape-round ttm-icon_element-size-md">
+                                            <i class="fa fa-map-marker"></i><!--  ttm-icon -->
+                                        </div>
+                                    </div>
+                                    <div class="featured-content"><!--  featured-content -->
+                                        <div class="featured-desc">
+                                            <p>Plot 24, IT Igbani Street, Jabi, Abuja, Nigeria</p>
+                                        </div>
+                                    </div>
+                                </div><!--  featured-icon-box END -->
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 order-md-3">
+                            <div class="text-sm-right">
+                                <a class="ttm-btn ttm-btn-size-md ttm-btn-style-border ttm-icon-btn-left ttm-btn-shape-round ttm-btn-color-white" href="mailto:Info@bluwire-il.com" title=""> Info@bluwire-il.com <i class="fa fa-envelope-o"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="second-footer ttm-textcolor-white bg-img2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
+                            <div class="widget widget_text  clearfix">
+                                <h3 class="widget-title">About Our Company</h3>
+                                <div class="textwidget widget-text">
+                                   BluWire Integrated Services distinguishes itself through its commitment to impart outstanding IT Training, and Consulting Services to individual and corporate clients. Founded in 2020 in Kuje.
+                                </div>
+                                <div class="quicklink-box">
+                                    <!--  featured-icon-box -->
+                                    <div class="featured-icon-box left-icon">
+                                        <div class="featured-icon"><!--  featured-icon -->
+                                            <div class="ttm-icon ttm-icon_element-style-round ttm-icon_element-bgcolor-skincolor ttm-icon_element-size-md ttm-icon_element-style-round">
+                                                <i class="fas fa-phone-square-alt"></i><!--  ttm-icon -->
+                                            </div>
+                                        </div>
+                                        <div class="featured-content"><!--  featured-content -->
+                                            <div class="featured-desc"><!--  featured-desc -->
+                                                <p>Talk To Our Support</p>
+                                            </div>
+                                            <div class="featured-title"><!--  featured-title -->
+                                                <h5>+234703 988 9971</h5>
+                                            </div>
+                                        </div>
+                                    </div><!--  featured-icon-box END -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
+                            <div class="widget link-widget clearfix">
+                               <h3 class="widget-title">Quick Links</h3>
+                                <ul id="menu-footer-services">
+                                    <li><a href="{% url 'contact' %}">Make Appointment</a></li>
+                                    <li><a href="{% url 'services' %}">Department Services</a></li>
+                                    <li><a href="{% url 'team' %}">Meet Our Experts</a></li>
+                                    <li><a href="{% url 'about' %}">Our Business Growth</a></li>
+                                </ul>
+                            </div>
+                            <h4>Child Companies</h4>
+                            <ul id="menu-footer-services">
+                                <li><a href="#">District 7 Films</a></li>
+                                <li><a href="#">PentHills</a></li>
+                                <li><a href="#">Green LightMusic</a></li>
+                                <li><a href="#">Our Business Growth</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
+                            <div class="widget widget_text clearfix">
+                                <h3 class="widget-title">Latest News</h3>
+                                <ul class="widget-post ttm-recent-post-list">
+                                    <li>
+                                        <a href="http://localhost:8000/blog/How-to-Lead-Your-Team-Through-Change/"><img src="{% static 'images/blog/01.jpg' %}" alt="post-img"></a>
+                                        <a href="http://localhost:8000/blog/How-to-Lead-Your-Team-Through-Change/">Define World Best IT Solution Technology</a>
+                                        <span class="post-date"><i class="fa fa-calendar"></i>May 01, 2019</span>
+                                    </li>
+                                    <li>
+                                        <a href="http://localhost:8000/blog/test-2/"><img src="{% static 'images/blog/02.jpg' %}" alt="post-img"></a>
+                                        <a href="http://localhost:8000/blog/test-2/">You Must Try 20 Secret Of Digital Transform</a>
+                                        <span class="post-date"><i class="fa fa-calendar"></i>May 03, 2019</span>
+                                    </li>
+                                    <li>
+                                        <a href="http://localhost:8000/blog/test-3/"><img src="{% static 'images/blog/03.jpg' %}" alt="post-img"></a>
+                                        <a href="http://localhost:8000/blog/test-3/">10 PHP Frameworks You Need To Use Anywhere</a>
+                                        <span class="post-date"><i class="fa fa-calendar"></i>May 05, 2019</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 widget-area">
+                            <div class="widget flicker_widget clearfix">
+                               <h3 class="widget-title">News Letter</h3>
+                               <div class="textwidget widget-text">
+                                    Sign up today for hints, tips and the latest product news
+                                    <form id="subscribe-form" class="newsletter-form" method="post" action="{% url 'email-list-signup' %}" data-mailchimp="true">
+
+                                        <div class="mailchimp-inputbox clearfix" id="subscribe-content">
+                                            <i class="fa fa-envelope"></i>
+
+                                           <input type="email" name="email" placeholder="Email Address.." required="">
+                                            <input type="submit" value="">
+                                        </div>
+                                        <div id="subscribe-msg"></div>
+                                    </form>
+                                    <h5 class="mb-20">Follow Us On</h5>
+                                    <div class="social-icons circle social-hover">
+                                        <ul class="list-inline">
+                                            <li class="social-facebook"><a class="tooltip-top" target="_blank" href="https://web.facebook.com/BluWire-102816105211386" target="_blank"  data-tooltip="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                            <li class="social-twitter"><a class="tooltip-top" target="_blank" href="https://twitter.com/BluwireI" target="_blank" data-tooltip="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                            <li class="social-instagram"><a class=" tooltip-top" target="_blank" href="https://www.instagram.com/bluwire.il/" target="_blank" data-tooltip="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                            <li class="social-youtube"><a class=" tooltip-top" target="_blank" href="https://www.youtube.com/channel/UC2zeubgFgA_cx26lXc_RSaQ" target="_blank" data-tooltip="youtube"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                                            <li class="social-linkedin"><a class=" tooltip-top" target="_blank" href="https://www.linkedin.com/company/bluwire-integrated-services-ltd" target="_blank" data-tooltip="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer-text ttm-bgcolor-darkgrey ttm-textcolor-white">
+                <div class="container">
+                    <div class="row copyright">
+                        <div class="col-md-6">
+                            <div class="">
+                                <span>Copyright © 2019&nbsp;<a href="{% url 'home' %}">BluWire-il</a> </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-md-right res-767-mt-10">
+                                <div class="d-lg-inline-flex">
+                                    <ul id="menu-footer-menu" class="footer-nav-menu">
+                                        <li><a href="{% url 'terms' %}">Terms</a></li>
+                                        <li><a href="{% url 'privacy' %}">Privacy</a></li>
+                                    </ul>
+                                    <div class="float-md-right ml-20 res-767-ml-0">
+<!--                                        <img src="{% static 'images/footer-payment-img.png' %}" alt="payment-img">-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer end-->
+
+        <!--back-to-top start-->
+        <a id="totop" href="#top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+        <!--back-to-top end-->
+
+    </div><!-- page end -->
+
+        <!-- Javascript -->
+
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/tether.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/jquery.easing.js' %}"></script>
+        <script src="{% static 'js/jquery-waypoints.js' %}"></script>
+        <script src="{% static 'js/jquery-validate.js' %}"></script>
+        <script src="{% static 'js/owl.carousel.js' %}"></script>
+        <script src="{% static 'js/jquery.prettyPhoto.js' %}"></script>
+        <script src="{% static 'js/numinate.min6959.js?ver=4.9.3' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+
+        <!-- Revolution Slider -->
+        <script src="{% static 'revolution/js/revolution.tools.min.js' %}"></script>
+        <script src="{% static 'revolution/js/rs6.min.js' %}"></script>
+        <script src="{% static 'revolution/js/slider.js' %}"></script>
+
+        <!-- Javascript end-->
+
+</body>
+
+</html>
